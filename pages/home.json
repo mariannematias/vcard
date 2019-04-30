@@ -1,0 +1,43 @@
+{ 
+  "profile": {
+    "img": "images/id.png",
+    "content": {
+      "title": "Hello, I am",
+      "name": "Robb Armstrong",
+      "position": "Designer and Front-end Developer",
+      "desc": "I have ten years experience as a web/interface designer. I have a love of clean, elegant styling, and I have lots of experience in the production of CSS and (X)HTML for modern websites. I have a reasonable grasp of using JavaScript frameworks, specifically jQuery."
+    }
+  },
+  "nav": [ 
+    {
+      "text": "Profile",
+      "icon": "fas fa-user",
+      "href": "#profile",
+      "class": "active"
+    },
+    {
+      "text": "Work",
+      "icon": "fas fa-toolbox",
+      "href": "#work",
+      "class": ""
+    },
+    {
+      "text": "Resume",
+      "icon": "fas fa-file-word",
+      "href": "#resume",
+      "class": ""
+    },
+    {
+      "text": "Blog",
+      "icon": "fas fa-comment",
+      "href": "#blog",
+      "class": ""
+    },
+    {
+      "text": "Contact",
+      "icon": "fas fa-envelope",
+      "href": "#contact",
+      "class": ""
+    }
+  ]
+}

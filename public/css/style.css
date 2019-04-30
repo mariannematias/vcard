@@ -1,0 +1,98 @@
+img {
+    width: 100%;
+}
+a {
+    transition: all .3s ease;
+}
+html,
+body {
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.container {
+    width: 980px;
+    margin: auto;
+}
+.main {
+    background-color: #d9dbdd;
+    padding: 5rem 0;
+}
+
+/** Left **/
+.left,
+.right {
+    padding: 0;
+}
+.profile {
+    background: url(../images/bg.jpg) no-repeat;
+    height: 266px;
+    position: relative;
+    padding-top: 4rem;
+}
+.profile img{
+    width: 120px;
+    display: block;
+    margin: auto;
+    border-radius: 50%;
+    border: .5em solid #BCBEC3;
+}
+.nav li {
+    display: block;
+    width: 100%;
+    border-bottom: 1px solid #222b2e;
+    background: linear-gradient(to bottom, #2c383c 0%,#2a363a 100%);
+}
+.nav li.active {
+    background: #ffd42d;
+}
+.nav li.active a {
+    color: #222b2e;
+}
+.nav li a {
+    padding: 1.4rem;
+    display: block;
+    text-align: right;
+    font-size: 1.2rem;
+    color: #d1d1d1;
+    position: relative;
+    background-image: linear-gradient(to left,transparent,transparent 50%, #ffd42d 50%, #ffd42d);
+    background-position: 100% 0;
+    background-size: 200% 100%;
+    transition: all .25s ease-in;
+}
+.nav li a .fas {
+    margin-left: 1rem;
+}
+.nav li a:hover {
+    text-decoration: none;
+    background-position: 0 0;
+    color: #222b2e;
+}
+
+/** Right **/
+.right {
+    background-color: #fff;
+}
+.body {
+    padding: 1.5rem 2rem;
+}
+.profile-section h2 {
+    font-size: 2rem;
+    line-height: 2.5rem;
+    color: #606060;
+    font-weight: normal;
+}
+.profile-section h2 strong {
+    color: #000;
+}
+.line {
+    height: 3px;
+    width: 70px;
+    background: #ffd42d;
+    margin: 20px 0;
+}
+.desc {
+    font-size: 1.1rem;
+    line-height: 1.8rem;
+    color: #828282;
+}
