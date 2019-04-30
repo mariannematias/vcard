@@ -1,12 +1,25 @@
+html,
+body {
+    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+}
 img {
     width: 100%;
 }
 a {
     transition: all .3s ease;
 }
-html,
-body {
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+a:hover {
+    text-decoration: none
+}
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.light {
+    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 200;
 }
 
 .container {
@@ -52,7 +65,7 @@ body {
     padding: 1.4rem;
     display: block;
     text-align: right;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     color: #d1d1d1;
     position: relative;
     background-image: linear-gradient(to left,transparent,transparent 50%, #ffd42d 50%, #ffd42d);
@@ -80,10 +93,10 @@ body {
     font-size: 2rem;
     line-height: 2.5rem;
     color: #606060;
-    font-weight: normal;
 }
 .profile-section h2 strong {
     color: #000;
+    font-weight: bold;
 }
 .line {
     height: 3px;
@@ -98,7 +111,7 @@ body {
     margin: 20px 0;
 }
 .desc {
-    font-size: 1.1rem;
+    font-size: 1rem;
     line-height: 1.8rem;
     color: #828282;
 }
@@ -111,9 +124,189 @@ body {
     font-size: 1.4rem;
     color: #606060;
 }
+.details li {
+    display: inline-block;
+    display: inline-block;
+    border: 1px solid #ededed;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+}
+.details li:nth-child(even) {
+    margin-right: 0;
+}
+.details li span {
+    padding: 0 .8rem;
+    line-height: 1.2rem;
+    font-size: 1rem;
+    color: #9b9b9b;
+}
+.details li p {
+    padding: .6rem 1rem;
+    line-height: 1.5rem;
+    font-size: 1rem;
+    color: #484848;
+    background: #f6f6f6;
+    border-left: 1px solid #ededed;
+    display: inline-block;
+    margin-bottom: 0;
+}
+
+.head {
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #d9dbdd;
+}
+.section-title {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #2c383c;
+    letter-spacing: 1px;
+}
+.work-menu {
+    margin-top: 1.5rem;
+}
+.work-menu li {
+    display: inline-block;
+    margin-right: .3rem;
+}
+.work-menu li a {
+    color: #b1b1b1;
+    padding: .5rem 1rem;
+    font-size: .9rem;
+}
+.work-menu li a.active,
+.work-menu li a:hover {
+    background: #ffd42d;
+    color: #000;
+}
+#lightgallery {
+    margin-top: 2rem;
+}
+.thumb {
+    width: 220px;
+    margin-bottom: .3rem;
+}
+
+.resume .light {
+    margin-top: 1.5rem;
+}
+.schools li {
+    border-bottom: 1px solid #ededed;
+    padding: 1rem 0 .5rem;
+}
+.schools p {
+    margin-bottom: .3rem;
+}
+.schools .school {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #2c383c;
+}
+.schools .year {
+    color: #2c383c;
+    font-size: .8rem;
+}
+.schools .year .far {
+    color: #2c383c;
+    margin-right: .5rem;
+}
+.schools .descr {
+    color: #828282;
+    font-size: .9rem;
+    line-height: 1.3rem;
+}
+.graph {
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #ededed;
+}
+.graph span {
+    color: #9a9a9a;
+    font-size: .8rem;
+}
+.bar{
+    height: 25px;
+    margin: 0 auto 10px auto;
+    line-height: 30px;
+    font-size: 16px;
+    color: white;
+    padding: 0 0 0 10px;
+    position: relative;
+}
+  .bar::before{
+    content: '';
+    width: 100%;
+    position: absolute;
+    left: 0;
+    height: 25px;
+    top: 0;
+    z-index: 0;
+    background: #ecf0f1;
+}
+.bar::after{
+    content: '';
+    background: #ffd42d;
+    height: 25px;
+    transition: 0.7s;
+    display: block;
+    width: 100%;
+    animation: bar-before 1 1.8s;
+    -webkit-animation: bar-before 1 1.8s;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+.bar1::after{
+    max-width: 71%;
+}
+.bar2::after{
+    max-width: 85%;
+}
+.bar3::after{
+    max-width: 76%;
+}
+.bar4::after{
+    max-width: 53%;
+}
+.bar5::after{
+    max-width: 69%;
+}
+@keyframes bar-before{
+    0%{
+        width: 0px;
+    }
+    100%{
+        width: 100%;
+    }
+}
+@-webkit-keyframes bar-before{
+    0%{
+        width: 0px;
+    }
+    100%{
+        width: 100%;
+    }
+}
+
+
+
 
 /** Footer **/ 
 footer {
     background: #f1f1f1;
-    padding: 20px 30px;
+    padding: 1rem;
+    position: relative;
+}
+.copyright {
+    margin-bottom: 0;
+    font-size: .8rem;
+    display: inline-block;
+}
+.icons {
+    display: inline-block;
+    position: absolute;
+    right: 2rem;
+}
+.icons li {
+    display: inline-block;
+    margin-left: .8rem;
 }

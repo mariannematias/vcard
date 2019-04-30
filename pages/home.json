@@ -1,16 +1,4 @@
 { 
-  "profile": {
-    "img": "images/id.png",
-    "content": {
-      "title": "Hello, I am",
-      "name": "Robb Armstrong",
-      "position": "Designer and Front-end Developer",
-      "desc": "I have ten years experience as a web/interface designer. I have a love of clean, elegant styling, and I have lots of experience in the production of CSS and (X)HTML for modern websites. I have a reasonable grasp of using JavaScript frameworks, specifically jQuery.",
-      "info": {
-        "title": "Personal Info"
-      }
-    }
-  },
   "nav": [ 
     {
       "text": "Profile",
@@ -43,7 +31,114 @@
       "class": ""
     }
   ],
+  "profile": {
+    "img": "images/id.png",
+    "content": {
+      "title": "Hello, I am",
+      "name": "Robb Armstrong",
+      "position": "Designer and Front-end Developer",
+      "desc": "I have ten years experience as a web/interface designer. I have a love of clean, elegant styling, and I have lots of experience in the production of CSS and (X)HTML for modern websites. I have a reasonable grasp of using JavaScript frameworks, specifically jQuery.",
+      "info": {
+        "title": "Personal Info",
+        "details": [
+          {
+            "label": "name",
+            "desc": "Robb Armstrong"
+          },
+          {
+            "label": "date of birth",
+            "desc": "September 06, 1976"
+          },
+          {
+            "label": "e-mail",
+            "desc": "info@yourdomain.com"
+          },
+          {
+            "label": "address",
+            "desc": "121 King St, Melbourne VIC"
+          },
+          {
+            "label": "phone",
+            "desc": "012-3456-7890"
+          },
+          {
+            "label": "website",
+            "desc": "www.themeforest.net"
+          }
+        ]
+      }
+    }
+  },
+  "work": {
+    "title": "Portfolio",
+    "menu": [
+      {"text": "All", "class": "active"}, 
+      {"text": "Web Design", "class": ""}, 
+      {"text": "App Icons", "class": ""}, 
+      {"text": "Ios App UI", "class": ""}, 
+      {"text": "Illustration", "class": ""}
+    ],
+    "pics": [{"img": "images/work1.jpg"}, {"img": "images/work2.jpg"}, {"img": "images/work3.jpg"}, {"img": "images/work4.jpg"},
+      {"img": "images/work5.jpg"}, {"img": "images/work6.jpg"}]
+  },
+  "resume": {
+    "title": "Resume",
+    "educ": {
+      "title": "Education",
+      "schools": [
+        {
+          "school": "Academy of Art University",
+          "year": "2001 - 2004",
+          "desc": "Academy of Art University's School of Web Design & New Media is the intersection between traditional design and new technologies."
+        },
+        {
+          "school": "IT Technical Institute",
+          "year": "2005 - 2008",
+          "desc": "Information technology (IT) workers can be found in many types of organizations. According to the U.S. Department of Labor, 'In the modern workplace, it is imperative that Information Technology (IT) works both effectively and reliably'"
+        },
+        {
+          "school": "Web Design School",
+          "year": "2009 - 2012",
+          "desc": "This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat."
+        }
+      ]
+    },
+    "skills": {
+      "title": "Skills",
+      "graph": [
+        {
+          "text": "Wordpress Development",
+          "class": "bar bar1",
+          "percent": "71%"
+        },
+        {
+          "text": "Photoshop",
+          "class": "bar bar2",
+          "percent": "85%"
+        },
+        {
+          "text": "HTML5/CSS3",
+          "class": "bar bar3",
+          "percent": "76%"
+        },
+        {
+          "text": "Ruby on Rails",
+          "class": "bar bar4",
+          "percent": "53%"
+        },
+        {
+          "text": "Social Marketing",
+          "class": "bar bar5",
+          "percent": "69%"
+        }
+      ]
+    },
+    "services": {
+      "title": "Services"
+    }
+  },
   "footer": {
-    "copyright": "© 2014 Robb Armstrong. All Rights Reserved"
+    "copyright": "© 2014 Robb Armstrong. All Rights Reserved",
+    "icons": [{"icon": "fab fa-facebook-f"}, {"icon": "fab fa-twitter"}, {"icon": "fab fa-dribbble"}, {"icon": "fab fa-pinterest"}]
   }
 }

@@ -11,6 +11,9 @@
 
         <link href="css/bootstrap.min.css" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet">
+        <link href="css/aos.css" rel="stylesheet">
+        <link href="css/lightgallery.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:200,400" rel="stylesheet">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     </head>
 
@@ -32,25 +35,94 @@
                         </div>
                         <div class="col-md-9 col-sm-12 right">
                             <div class="body">
-                                <div id="profile" class="profile-section">
-                                    <h2>{{page.profile.content.title}} <strong>{{page.profile.content.name}}</strong><br>{{page.profile.content.position}}</h2>
-                                    <p class="line"></p>
-                                    <p class="desc">{{page.profile.content.desc}}</p>
-                                    <div class="info">
-                                        <h4>{{page.profile.content.info.title}}</h4>
-                                        <p class="line2"></p>
+                                <!--<div id="profile" class="profile-section">
+                                    <div data-aos="fade-down" data-aos-duration="1200">
+                                        <h2 class="light">{{page.profile.content.title}} <strong>{{page.profile.content.name}}</strong><br>{{page.profile.content.position}}</h2>
+                                        <p class="line"></p>
+                                        <p class="desc">{{page.profile.content.desc}}</p>
                                     </div>
+                                    <div class="info" data-aos="zoom-in" data-aos-duration="1100">
+                                        <h4 class="light">{{page.profile.content.info.title}}</h4>
+                                        <p class="line2"></p>
+                                        <ul class="details">
+                                            {{#page.profile.content.info.details}}
+                                                <li>
+                                                    <span>{{label}}</span>
+                                                    <p>{{desc}}</p>
+                                                </li>
+                                            {{/page.profile.content.info.details}}
+                                        </ul>
+                                    </div>
+                                </div> -->
+
+                                <!-- <div id="work" class="work">
+                                    <div class="head">
+                                        <h3 class="section-title">{{page.work.title}}</h3>
+                                    </div>
+                                    <ul class="work-menu">
+                                        {{#page.work.menu}}
+                                            <li><a href="#" class="{{class}}">{{text}}</a></li>
+                                        {{/page.work.menu}}
+                                    </ul>
+
+                                    <div id="lightgallery">
+                                        {{#page.work.pics}}
+                                            <a href="{{img}}">
+                                                <img class="thumb" src="{{img}}">
+                                            </a>
+                                        {{/page.work.pics}}
+                                        {{#page.work.pics}}
+                                            <a href="{{img}}">
+                                                <img class="thumb" src="{{img}}">
+                                            </a>
+                                        {{/page.work.pics}}                                          
+                                    </div>
+                                </div> -->
+
+                                <div id="resume" class="resume">
+                                    <div class="head">
+                                        <h3 class="section-title">{{page.resume.title}}</h3>
+                                    </div>
+                                    <h4 class="light">{{page.resume.educ.title}}</h4>
+                                    <p class="line2"></p>
+                                    <ul class="schools">
+                                        {{#page.resume.educ.schools}}
+                                            <li>
+                                                <p class="school">{{school}}</p>
+                                                <p class="year"><i class="far fa-calendar-alt"></i>{{year}}</p>
+                                                <p class="descr">{{desc}}</p>
+                                            </li>
+                                        {{/page.resume.educ.schools}}
+                                    </ul>
+                                    <h4 class="light">{{page.resume.skills.title}}</h4>
+                                    <p class="line2"></p>
+                                    <div class="graph">
+                                        {{#page.resume.skills.graph}}
+                                            <span>{{text}}</span>
+                                            <div class="{{class}}">{{percent}}</div>
+                                        {{/page.resume.skills.graph}}
+                                    </div>
+                                    <h4 class="light">{{page.resume.services.title}}</h4>
+                                    <p class="line2"></p>
+
                                 </div>
                                 
                             </div>
 
-                            <!-- <footer>
+                            <footer>
                                 <div class="container">
                                     <div class="footer">
                                         <p class="copyright">{{page.footer.copyright}}</p>
+                                        <ul class="icons">
+                                            {{#page.footer.icons}}
+                                                <li>
+                                                    <i class="{{icon}}"></i>
+                                                </li>
+                                            {{/page.footer.icons}}
+                                        </ul>
                                     </div>
                                 </div>
-                            </footer> -->
+                            </footer>
                         </div>
                     </div>
                 </div>
@@ -61,6 +133,10 @@
 
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/lightgallery.js"></script>
+    <script src="js/lg-thumbnail.js"></script>
+    <script src="js/lg-fullscreen.js"></script>
     <script src="js/custom.js"></script>
   </body>
 </html>
