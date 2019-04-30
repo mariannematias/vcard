@@ -91,8 +91,29 @@ body {
     background: #ffd42d;
     margin: 20px 0;
 }
+.line2 {
+    height: 6px;
+    width: 50px;
+    background: #ffd42d;
+    margin: 20px 0;
+}
 .desc {
     font-size: 1.1rem;
     line-height: 1.8rem;
     color: #828282;
+}
+.info {
+    border-top: 1px solid #ececec;
+    margin-top: 2rem;
+}
+.info h4 {
+    padding-top: 1.5rem;
+    font-size: 1.4rem;
+    color: #606060;
+}
+
+/** Footer **/ 
+footer {
+    background: #f1f1f1;
+    padding: 20px 30px;
 }

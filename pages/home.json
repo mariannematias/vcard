@@ -5,7 +5,10 @@
       "title": "Hello, I am",
       "name": "Robb Armstrong",
       "position": "Designer and Front-end Developer",
-      "desc": "I have ten years experience as a web/interface designer. I have a love of clean, elegant styling, and I have lots of experience in the production of CSS and (X)HTML for modern websites. I have a reasonable grasp of using JavaScript frameworks, specifically jQuery."
+      "desc": "I have ten years experience as a web/interface designer. I have a love of clean, elegant styling, and I have lots of experience in the production of CSS and (X)HTML for modern websites. I have a reasonable grasp of using JavaScript frameworks, specifically jQuery.",
+      "info": {
+        "title": "Personal Info"
+      }
     }
   },
   "nav": [ 
@@ -39,5 +42,8 @@
       "href": "#contact",
       "class": ""
     }
-  ]
+  ],
+  "footer": {
+    "copyright": "© 2014 Robb Armstrong. All Rights Reserved"
+  }
 }
