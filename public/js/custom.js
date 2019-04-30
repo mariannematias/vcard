@@ -1,4 +1,26 @@
 $(document).ready(function(){
     AOS.init();
     $("#lightgallery").lightGallery(); 
+    $("#profile").show();  
+    $("#work").hide();
+    $("#resume").hide();
+
+    $("#profile-nav").click(function()   
+    {  
+        $("#profile").show();  
+        $("#work").hide();
+        $("#resume").hide();
+    });  
+    $("#work-nav").click(function()  
+    {  
+        $("#profile").hide();  
+        $("#work").show();
+        $("#resume").hide();
+    });  
+    $("#resume-nav").click(function()  
+    {  
+        $("#profile").hide();  
+        $("#work").hide();
+        $("#resume").show();
+    });  
 });

@@ -3,31 +3,31 @@
     {
       "text": "Profile",
       "icon": "fas fa-user",
-      "href": "#profile",
+      "id": "profile-nav",
       "class": "active"
     },
     {
       "text": "Work",
       "icon": "fas fa-toolbox",
-      "href": "#work",
+      "id": "work-nav",
       "class": ""
     },
     {
       "text": "Resume",
       "icon": "fas fa-file-word",
-      "href": "#resume",
+      "id": "resume-nav",
       "class": ""
     },
     {
       "text": "Blog",
       "icon": "fas fa-comment",
-      "href": "#blog",
+      "id": "blog-nav",
       "class": ""
     },
     {
       "text": "Contact",
       "icon": "fas fa-envelope",
-      "href": "#contact",
+      "id": "contact-nav",
       "class": ""
     }
   ],
