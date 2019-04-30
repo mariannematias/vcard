@@ -55,10 +55,8 @@ ul {
     border-bottom: 1px solid #222b2e;
     background: linear-gradient(to bottom, #2c383c 0%,#2a363a 100%);
 }
-.nav li.active {
+.nav li a.active {
     background: #ffd42d;
-}
-.nav li.active a {
     color: #222b2e;
 }
 .nav li a {

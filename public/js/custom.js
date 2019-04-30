@@ -5,11 +5,17 @@ $(document).ready(function(){
     $("#work").hide();
     $("#resume").hide();
 
+    $(".nav li a").click(function(){
+        $(".nav li a").removeClass("active");
+        $(this).addClass("active");
+    });
+
     $("#profile-nav").click(function()   
     {  
         $("#profile").show();  
         $("#work").hide();
         $("#resume").hide();
+
     });  
     $("#work-nav").click(function()  
     {  
