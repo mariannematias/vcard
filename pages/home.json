@@ -134,8 +134,116 @@
       ]
     },
     "services": {
-      "title": "Services"
+      "title": "Services",
+      "list": [
+        {
+          "text": "Design",
+          "icon": "fas fa-cloud"
+        },
+        {
+          "text": "Coding",
+          "icon": "far fa-smile"
+        },
+        {
+          "text": "Responsive",
+          "icon": "fas fa-desktop"
+        },
+        {
+          "text": "Planning",
+          "icon": "fas fa-text-width"
+        },
+        {
+          "text": "Wordpress",
+          "icon": "fab fa-wordpress"
+        },
+        {
+          "text": "Photography",
+          "icon": "fas fa-image"
+        }
+      ]
+    },
+    "work": {
+      "title": "Work Experience",
+      "exp": [
+        {
+          "school": "Graphic River",
+          "year": "2001 - 2004",
+          "desc": "This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor."
+        },
+        {
+          "school": "Video Hive",
+          "year": "2005 - 2008",
+          "desc": "This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit."
+        },
+        {
+          "school": "Themeforest",
+          "year": "2009 - 2014",
+          "desc": "This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor."
+        }
+      ]
     }
+  },
+  "blog": {
+    "title": "Blog",
+    "post": [
+      {
+        "img": "images/temp.jpg",
+        "title": "Standard Post with Image",
+        "meta": [
+          {
+            "icon": "far fa-calendar-alt",
+            "text": "30 March"
+          },
+          {
+            "icon": "fas fa-user",
+            "text": "Admin"
+          },
+          {
+            "icon": "fas fa-comments",
+            "text": "10 Comments"
+          }
+        ],
+        "desc": "This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit."
+      },
+      {
+        "img": "images/temp2.jpg",
+        "title": "Standard Post with Image",
+        "meta": [
+          {
+            "icon": "far fa-calendar-alt",
+            "text": "30 March"
+          },
+          {
+            "icon": "fas fa-user",
+            "text": "Admin"
+          },
+          {
+            "icon": "fas fa-comments",
+            "text": "10 Comments"
+          }
+        ],
+        "desc": "This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit."
+      },
+      {
+        "img": "images/temp3.jpg",
+        "title": "Standard Post with Image",
+        "meta": [
+          {
+            "icon": "far fa-calendar-alt",
+            "text": "30 March"
+          },
+          {
+            "icon": "fas fa-user",
+            "text": "Admin"
+          },
+          {
+            "icon": "fas fa-comments",
+            "text": "10 Comments"
+          }
+        ],
+        "desc": "This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit."
+      }
+    ]
   },
   "footer": {
     "copyright": "© 2014 Robb Armstrong. All Rights Reserved",

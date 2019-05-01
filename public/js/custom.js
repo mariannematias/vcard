@@ -1,9 +1,9 @@
 $(document).ready(function(){
-    AOS.init();
     $("#lightgallery").lightGallery(); 
     $("#profile").show();  
     $("#work").hide();
     $("#resume").hide();
+    $("#blog").hide();
 
     $(".nav li a").click(function(){
         $(".nav li a").removeClass("active");
@@ -15,6 +15,7 @@ $(document).ready(function(){
         $("#profile").show();  
         $("#work").hide();
         $("#resume").hide();
+        $("#blog").hide();
 
     });  
     $("#work-nav").click(function()  
@@ -22,11 +23,20 @@ $(document).ready(function(){
         $("#profile").hide();  
         $("#work").show();
         $("#resume").hide();
+        $("#blog").hide();
     });  
     $("#resume-nav").click(function()  
     {  
         $("#profile").hide();  
         $("#work").hide();
         $("#resume").show();
+        $("#blog").hide();
+    });  
+    $("#blog-nav").click(function()  
+    {  
+        $("#profile").hide();  
+        $("#work").hide();
+        $("#resume").hide();
+        $("#blog").show();
     });  
 });

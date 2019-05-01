@@ -10,10 +10,10 @@
         <title>{{global.name}}</title>
 
         <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/animate.css" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet">
-        <link href="css/aos.css" rel="stylesheet">
         <link href="css/lightgallery.css" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:200,400" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400" rel="stylesheet">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     </head>
 
@@ -36,12 +36,12 @@
                         <div class="col-md-9 col-sm-12 right">
                             <div class="body">
                                 <div id="profile" class="profile-section">
-                                    <div data-aos="fade-down" data-aos-duration="1200">
+                                    <div class="animated fadeInDown">
                                         <h2 class="light">{{page.profile.content.title}} <strong>{{page.profile.content.name}}</strong><br>{{page.profile.content.position}}</h2>
                                         <p class="line"></p>
                                         <p class="desc">{{page.profile.content.desc}}</p>
                                     </div>
-                                    <div class="info" data-aos="zoom-in" data-aos-duration="1100">
+                                    <div class="info animated fadeInUp">
                                         <h4 class="light">{{page.profile.content.info.title}}</h4>
                                         <p class="line2"></p>
                                         <ul class="details">
@@ -56,7 +56,7 @@
                                 </div>
 
                                 <div id="work" class="work">
-                                    <div class="head">
+                                    <div class="head animated fadeInDown">
                                         <h3 class="section-title">{{page.work.title}}</h3>
                                     </div>
                                     <ul class="work-menu">
@@ -68,24 +68,24 @@
                                     <div id="lightgallery">
                                         {{#page.work.pics}}
                                             <a href="{{img}}">
-                                                <img class="thumb" src="{{img}}">
+                                                <img class="thumb animated flipInX" src="{{img}}">
                                             </a>
                                         {{/page.work.pics}}
                                         {{#page.work.pics}}
                                             <a href="{{img}}">
-                                                <img class="thumb" src="{{img}}">
+                                                <img class="thumb animated flipInX" src="{{img}}">
                                             </a>
                                         {{/page.work.pics}}                                          
                                     </div>
-                                </div>
+                                </div> 
 
                                 <div id="resume" class="resume">
-                                    <div class="head">
+                                    <div class="head animated fadeInDown">
                                         <h3 class="section-title">{{page.resume.title}}</h3>
                                     </div>
                                     <h4 class="light">{{page.resume.educ.title}}</h4>
                                     <p class="line2"></p>
-                                    <ul class="schools">
+                                    <ul class="schools animated fadeInLeft">
                                         {{#page.resume.educ.schools}}
                                             <li>
                                                 <p class="school">{{school}}</p>
@@ -104,9 +104,53 @@
                                     </div>
                                     <h4 class="light">{{page.resume.services.title}}</h4>
                                     <p class="line2"></p>
-
+                                    <ul class="service-list">
+                                        {{#page.resume.services.list}}
+                                            <li class="align-center">
+                                                <i class="{{icon}}"></i>
+                                                <span class="line-list"></span>
+                                                <p>{{text}}</p>
+                                            </li>
+                                        {{/page.resume.services.list}}
+                                    </ul>
+                                    <h4 class="light top-border">{{page.resume.work.title}}</h4>
+                                    <p class="line2"></p>
+                                    <ul class="schools animated fadeInLeft">
+                                        {{#page.resume.work.exp}}
+                                            <li>
+                                                <p class="school">{{school}}</p>
+                                                <p class="year"><i class="far fa-calendar-alt"></i>{{year}}</p>
+                                                <p class="descr">{{desc}}</p>
+                                            </li>
+                                        {{/page.resume.work.exp}}
+                                    </ul>
                                 </div>
-                                
+
+                                <div id="blog" class="blog">
+                                    <div class="head animated fadeInDown">
+                                        <h3 class="section-title">{{page.blog.title}}</h3>
+                                    </div>
+                                    {{#page.blog.post}}
+                                        <div class="row post animated flipInX">
+                                            <div class="col-md-5 col-sm-12">
+                                                <img src="{{img}}">
+                                            </div>
+                                            <div class="col-md-7 col-sm-12">
+                                                <h4><a href="#">{{title}}</a>
+                                                <ul class="post-meta">
+                                                    {{#meta}}
+                                                        <li>
+                                                            <i class="{{icon}}"></i>
+                                                            <a href="#">{{text}}</a>
+                                                        </li>
+                                                    {{/meta}}
+                                                </ul>
+                                                <p class="post-desc">{{desc}}</p>
+                                            </div>
+                                        </div>
+                                    {{/page.blog.post}}
+                                </div>
+                            
                             </div>
 
                             <footer>
@@ -133,7 +177,6 @@
 
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/aos.js"></script>
     <script src="js/lightgallery.js"></script>
     <script src="js/lg-thumbnail.js"></script>
     <script src="js/lg-fullscreen.js"></script>
