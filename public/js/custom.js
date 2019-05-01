@@ -1,42 +1,18 @@
 $(document).ready(function(){
     $("#lightgallery").lightGallery(); 
-    $("#profile").show();  
-    $("#work").hide();
-    $("#resume").hide();
-    $("#blog").hide();
+    $("#section1").show();  
+    $("#section2").hide();
+    $("#section3").hide();
+    $("#section4").hide();
+    $("#section5").hide();
 
     $(".nav li a").click(function(){
         $(".nav li a").removeClass("active");
         $(this).addClass("active");
     });
-
-    $("#profile-nav").click(function()   
-    {  
-        $("#profile").show();  
-        $("#work").hide();
-        $("#resume").hide();
-        $("#blog").hide();
-
-    });  
-    $("#work-nav").click(function()  
-    {  
-        $("#profile").hide();  
-        $("#work").show();
-        $("#resume").hide();
-        $("#blog").hide();
-    });  
-    $("#resume-nav").click(function()  
-    {  
-        $("#profile").hide();  
-        $("#work").hide();
-        $("#resume").show();
-        $("#blog").hide();
-    });  
-    $("#blog-nav").click(function()  
-    {  
-        $("#profile").hide();  
-        $("#work").hide();
-        $("#resume").hide();
-        $("#blog").show();
-    });  
+    
+    $(".showSection").click(function(){
+        $(".targetDiv").hide();
+        $('#section'+$(this).attr("id")).show();
+    });
 });

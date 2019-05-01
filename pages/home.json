@@ -3,31 +3,31 @@
     {
       "text": "Profile",
       "icon": "fas fa-user",
-      "id": "profile-nav",
+      "id": "1",
       "class": "active"
     },
     {
       "text": "Work",
       "icon": "fas fa-toolbox",
-      "id": "work-nav",
+      "id": "2",
       "class": ""
     },
     {
       "text": "Resume",
       "icon": "fas fa-file-word",
-      "id": "resume-nav",
+      "id": "3",
       "class": ""
     },
     {
       "text": "Blog",
       "icon": "fas fa-comment",
-      "id": "blog-nav",
+      "id": "4",
       "class": ""
     },
     {
       "text": "Contact",
       "icon": "fas fa-envelope",
-      "id": "contact-nav",
+      "id": "5",
       "class": ""
     }
   ],
@@ -35,7 +35,7 @@
     "img": "images/id.png",
     "content": {
       "title": "Hello, I am",
-      "name": "Robb Armstrong",
+      "name": "Franklin K. Walsh",
       "position": "Designer and Front-end Developer",
       "desc": "I have ten years experience as a web/interface designer. I have a love of clean, elegant styling, and I have lots of experience in the production of CSS and (X)HTML for modern websites. I have a reasonable grasp of using JavaScript frameworks, specifically jQuery.",
       "info": {
@@ -43,15 +43,15 @@
         "details": [
           {
             "label": "name",
-            "desc": "Robb Armstrong"
+            "desc": "Franklin K. Walsh"
           },
           {
             "label": "date of birth",
-            "desc": "September 06, 1976"
+            "desc": "March 16, 1987"
           },
           {
             "label": "e-mail",
-            "desc": "info@yourdomain.com"
+            "desc": "frank@yourdomain.com"
           },
           {
             "label": "address",
@@ -63,7 +63,7 @@
           },
           {
             "label": "website",
-            "desc": "www.themeforest.net"
+            "desc": "www.domain.net"
           }
         ]
       }
@@ -206,6 +206,11 @@
         "desc": "This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit."
       },
       {
+        "full-img": {
+          "color": "#ffd42d",
+          "text": "www.themeforest.net",
+          "icon": "fas fa-link"
+        },
         "img": "images/temp2.jpg",
         "title": "Standard Post with Image",
         "meta": [
@@ -225,6 +230,14 @@
         "desc": "This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit."
       },
       {
+        "full-img": {
+          "color": "#2d383c",
+          "text": "This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aene.This is photoshop's version f Lorem Ipsum.",
+          "text-color": "#ffd42d",
+          "icon2": "fas fa-quote-left",
+          "text2": "John Smith",
+          "text-color2": "#fff"
+        },
         "img": "images/temp3.jpg",
         "title": "Standard Post with Image",
         "meta": [
@@ -244,6 +257,31 @@
         "desc": "This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit."
       }
     ]
+  },
+  "contact": {
+    "title": "Contact Us",
+    "info": {
+      "title": "Contact Info",
+      "desc": "This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio.",
+      "meta": [
+        {
+          "icon": "fas fa-home",
+          "text": "lorem ipsum street"
+        },
+        {
+          "icon": "fas fa-phone",
+          "text": "+399 (500) 321 9548"
+        },
+        {
+          "icon": "fas fa-home",
+          "text": "info@domain.com"
+        }
+      ]
+    },
+    "message": {
+      "title": "Send us a message",
+      "btntext": "Send message"
+    }
   },
   "footer": {
     "copyright": "© 2014 Robb Armstrong. All Rights Reserved",
