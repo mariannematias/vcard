@@ -55,33 +55,43 @@
                                     </div>
                                 </div>
 
-                                <div id="section2" class="targetDiv work">
+                                <div id="section2" class="targetDiv show work">
                                     <div class="head animated fadeInDown">
                                         <h3 class="section-title">{{page.work.title}}</h3>
+                                        <div class="controls">
+                                            <p>{{page.nav-right.text}}</p> 
+                                            <a href="#" class="control-btn btn-prev"><i class="{{page.nav-right.prev}}"></i></a>
+                                            <a href="#" class="control-btn btn-next"><i class="{{page.nav-right.next}}"></i></a>
+                                        </div>
                                     </div>
                                     <ul class="work-menu">
                                         {{#page.work.menu}}
-                                            <li><a href="#" class="{{class}}">{{text}}</a></li>
+                                            <li><a href="#" id="{{id}}" class="work-nav {{class}}">{{text}}</a></li>
                                         {{/page.work.menu}}
                                     </ul>
 
                                     <div id="lightgallery">
                                         {{#page.work.pics}}
                                             <a href="{{img}}">
-                                                <img class="thumb animated flipInX" src="{{img}}">
+                                                <img class="thumb animated flipInX {{class}}" src="{{img}}">
                                             </a>
                                         {{/page.work.pics}}
-                                        {{#page.work.pics}}
+                                        {{#page.work.pics2}}
                                             <a href="{{img}}">
-                                                <img class="thumb animated flipInX" src="{{img}}">
+                                                <img class="thumb animated flipInX {{class}}" src="{{img}}">
                                             </a>
-                                        {{/page.work.pics}}                                          
+                                        {{/page.work.pics2}}                                          
                                     </div>
                                 </div> 
 
                                 <div id="section3" class="targetDiv resume">
                                     <div class="head animated fadeInDown">
                                         <h3 class="section-title">{{page.resume.title}}</h3>
+                                        <div class="controls">
+                                            <p>{{page.nav-right.text}}</p> 
+                                            <a href="#" class="control-btn btn-prev"><i class="{{page.nav-right.prev}}"></i></a>
+                                            <a href="#" class="control-btn btn-next"><i class="{{page.nav-right.next}}"></i></a>
+                                        </div>
                                     </div>
                                     <h4 class="light">{{page.resume.educ.title}}</h4>
                                     <p class="line2"></p>
@@ -99,7 +109,7 @@
                                     <div class="graph">
                                         {{#page.resume.skills.graph}}
                                             <span>{{text}}</span>
-                                            <div class="{{class}}">{{percent}}</div>
+                                            <div class="{{class}}"><span>{{percent}}</span></div>
                                         {{/page.resume.skills.graph}}
                                     </div>
                                     <h4 class="light">{{page.resume.services.title}}</h4>
@@ -129,6 +139,11 @@
                                 <div id="section4" class="targetDiv blog">
                                     <div class="head animated fadeInDown">
                                         <h3 class="section-title">{{page.blog.title}}</h3>
+                                        <div class="controls">
+                                            <p>{{page.nav-right.text}}</p> 
+                                            <a href="#" class="control-btn btn-prev"><i class="{{page.nav-right.prev}}"></i></a>
+                                            <a href="#" class="control-btn btn-next"><i class="{{page.nav-right.next}}"></i></a>
+                                        </div>
                                     </div>
                                     {{#page.blog.post}}
                                         {{#full-img}}
@@ -210,7 +225,7 @@
                                         <ul class="icons">
                                             {{#page.footer.icons}}
                                                 <li>
-                                                    <i class="{{icon}}"></i>
+                                                    <a href="#"><i class="{{icon}}"></i></a>
                                                 </li>
                                             {{/page.footer.icons}}
                                         </ul>

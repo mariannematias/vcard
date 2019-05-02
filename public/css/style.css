@@ -27,7 +27,7 @@ ul {
     font-weight: 200;
 }
 .container {
-    width: 980px;
+    max-width: 980px;
     margin: auto;
 }
 .main {
@@ -75,6 +75,7 @@ ul {
     background-position: 100% 0;
     background-size: 200% 100%;
     transition: all .25s ease-in;
+    cursor: pointer;
 }
 .nav li a .fas {
     margin-left: 1rem;
@@ -157,12 +158,34 @@ ul {
 .head {
     padding-bottom: 1rem;
     border-bottom: 1px solid #d9dbdd;
+    position: relative;
+}
+.controls {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    top: .5rem;
+}
+.controls p {
+    font-size: .8rem;
+    float: left;
+    padding-top: .3rem;
+    margin-right: .8rem;
+}
+.controls i {
+    font-size: 1.7rem;
+    color: #2c383c;
+}
+.controls a:hover i,
+.icons li a:hover {
+    color: #ffd42d;
 }
 .section-title {
     text-transform: uppercase;
     font-weight: bold;
     color: #2c383c;
     letter-spacing: 1px;
+    display: inline-block;
 }
 .work-menu {
     margin-top: 1.5rem;
@@ -187,6 +210,7 @@ ul {
 .thumb {
     width: 220px;
     margin-bottom: .3rem;
+    cursor: pointer;
 }
 
 .resume .light {
@@ -233,8 +257,15 @@ ul {
     color: white;
     padding: 0 0 0 10px;
     position: relative;
+    transition: all .7s ease-in-out;
 }
-  .bar::before{
+.bar span {
+    position: absolute;
+    left: 1rem;
+    z-index: 2;
+    color: #fff;
+}
+.bar::before{
     content: '';
     width: 100%;
     position: absolute;
@@ -248,15 +279,13 @@ ul {
     content: '';
     background: #ffd42d;
     height: 25px;
-    transition: 0.7s;
-    display: block;
     width: 100%;
-    animation: bar-before 1 1.8s;
-    -webkit-animation: bar-before 1 1.8s;
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 0;
+    z-index: 1;
+    animation: bar-before 1 2s;
+    -webkit-animation: bar-before 1 2s;
 }
 .bar1::after{
     max-width: 71%;
@@ -305,6 +334,7 @@ ul {
     height: 165px;
     cursor: pointer;
     transition: all .3s ease-in-out;
+    position: relative;
 }
 .service-list li i {
     margin-bottom: 2rem;
@@ -344,6 +374,9 @@ ul {
     color: #2c383c;
     font-size: 1.1rem;
     font-weight: bold;
+}
+.post img {
+    padding-top: .7rem;
 }
 .post-desc {
     color: #828282;
@@ -449,4 +482,44 @@ footer {
 .icons li {
     display: inline-block;
     margin-left: .8rem;
+}
+.icons li a {
+    color: #2c383c;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: auto;
+    }
+}
+
+@media (max-width: 576px) {
+    .icons {
+        display: block;
+        position: unset;
+        right: 0;
+        text-align: center;
+    }
+    .copyright {
+        display: block;
+        text-align: center;
+    }
+    .main {
+        padding: 0;
+    }
+    .profile {
+        background-size: cover;
+    }
+    .profile img {
+        width: 140px;
+    }
+    .nav li a {
+        text-align: center;
+    }
+    .thumb {
+        width: 49%;
+    }
+    .service-list li {
+        width: 48.9%;
+    }
 }

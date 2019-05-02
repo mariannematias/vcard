@@ -31,13 +31,18 @@
       "class": ""
     }
   ],
+  "nav-right": {
+    "text": "Go to next/previous page",
+    "prev": "fas fa-arrow-circle-left",
+    "next": "fas fa-arrow-circle-right"
+  },
   "profile": {
     "img": "images/id.png",
     "content": {
       "title": "Hello, I am",
       "name": "Franklin K. Walsh",
       "position": "Designer and Front-end Developer",
-      "desc": "I have ten years experience as a web/interface designer. I have a love of clean, elegant styling, and I have lots of experience in the production of CSS and (X)HTML for modern websites. I have a reasonable grasp of using JavaScript frameworks, specifically jQuery.",
+      "desc": "Creative Senior Front-end Developer with 15+ years of experience leveraging JavaScript to build responsive websites, mobile apps, and interactive features that drive business growth and improve UX.",
       "info": {
         "title": "Personal Info",
         "details": [
@@ -72,14 +77,64 @@
   "work": {
     "title": "Portfolio",
     "menu": [
-      {"text": "All", "class": "active"}, 
-      {"text": "Web Design", "class": ""}, 
-      {"text": "App Icons", "class": ""}, 
-      {"text": "Ios App UI", "class": ""}, 
-      {"text": "Illustration", "class": ""}
+      {"text": "All", "class": "active", "id": "all"}, 
+      {"text": "Web Design", "class": "", "id": "1"}, 
+      {"text": "App Icons", "class": "", "id": "2"}, 
+      {"text": "Ios App UI", "class": "", "id": "3"}, 
+      {"text": "Illustration", "class": "", "id": "4"}
     ],
-    "pics": [{"img": "images/work1.jpg"}, {"img": "images/work2.jpg"}, {"img": "images/work3.jpg"}, {"img": "images/work4.jpg"},
-      {"img": "images/work5.jpg"}, {"img": "images/work6.jpg"}]
+    "pics": [
+      {
+        "img": "images/work1.jpg",
+        "class": "cat1 cat2"
+      }, 
+      {
+        "img": "images/work2.jpg",
+        "class": "cat2 cat3"
+      }, 
+      {
+        "img": "images/work3.jpg",
+        "class": "cat1"
+      }, 
+      {
+        "img": "images/work1-a.jpg",
+        "class": "cat3 cat2"
+      }, 
+      {
+        "img": "images/work2-a.jpg",
+        "class": "cat3"
+      }, 
+      {
+        "img": "images/work3-a.jpg",
+        "class": "cat3 cat1"
+      }
+    ],
+    "pics2": [
+      {
+        "img": "images/work4.jpg",
+        "class": "cat1 cat2"
+      }, 
+      {
+        "img": "images/work5.jpg",
+        "class": "cat3"
+      },
+      {
+        "img": "images/work6.jpg",
+        "class": "cat2"
+      },
+      {
+        "img": "images/work2-a.jpg",
+        "class": "cat4"
+      },
+      {
+        "img": "images/work3-a.jpg",
+        "class": "cat4"
+      },
+      {
+        "img": "images/work1-a.jpg",
+        "class": "cat4"
+        }
+    ]
   },
   "resume": {
     "title": "Resume",
@@ -168,17 +223,17 @@
         {
           "school": "Graphic River",
           "year": "2001 - 2004",
-          "desc": "This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor."
+          "desc": "Lorem ipsum dolor sit amet, pede eu vitae. Justo quis sagittis, penatibus velit a quis, urna rutrum ac donec, a sed augue bibendum volutpat nam, amet vitae scelerisque porta adipiscing nullam at."
         },
         {
           "school": "Video Hive",
           "year": "2005 - 2008",
-          "desc": "This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit."
+          "desc": "Auctor ante enim pellentesque, suscipit quisque sed, tellus lacinia. Convallis condimentum suspendisse sit lorem, velit quis, suspendisse lacinia nam.Vel odio fringilla, nostra class nulla amet eleifend non sapien, fusce magna a lectus nec, in a lorem non voluptatibus suspendisse mauris."
         },
         {
           "school": "Themeforest",
           "year": "2009 - 2014",
-          "desc": "This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor."
+          "desc": "Accumsan at, malesuada dolor rhoncus ut in. Id turpis, sit ut nam dignissim, scelerisque lorem sem, eu in tempus. Volutpat venenatis accumsan id quia purus dolor, eget eget arcu mi in tristique, pede sit."
         }
       ]
     }
@@ -203,7 +258,7 @@
             "text": "10 Comments"
           }
         ],
-        "desc": "This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit."
+        "desc": "Auctor ante enim pellentesque, suscipit quisque sed, tellus lacinia. Convallis condimentum suspendisse sit lorem, velit quis, suspendisse lacinia nam.Vel odio fringilla, nostra class nulla amet eleifend non sapien, fusce magna a lectus nec, in a lorem non voluptatibus suspendisse mauris."
       },
       {
         "full-img": {
@@ -227,7 +282,7 @@
             "text": "10 Comments"
           }
         ],
-        "desc": "This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit."
+        "desc": "Phasellus torquent nunc vitae, tristique id aperiam consequat, interdum ac lacus nunc. Parturient massa at sapien purus ullamcorper elit, sit eu, congue scelerisque in sollicitudin, malesuada nam non ligula malesuada consectetuer."
       },
       {
         "full-img": {
@@ -262,7 +317,7 @@
     "title": "Contact Us",
     "info": {
       "title": "Contact Info",
-      "desc": "This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio.",
+      "desc": "Lorem ipsum dolor sit amet, pede eu vitae. Justo quis sagittis, penatibus velit a quis, urna rutrum ac donec, a sed augue bibendum volutpat nam, amet vitae scelerisque porta adipiscing nullam at. Auctor ante enim pellentesque, suscipit quisque sed, tellus lacinia. Convallis condimentum suspendisse sit lorem, velit quis.",
       "meta": [
         {
           "icon": "fas fa-home",
@@ -284,7 +339,7 @@
     }
   },
   "footer": {
-    "copyright": "© 2014 Robb Armstrong. All Rights Reserved",
+    "copyright": "© 2019 Franklin K. Walsh. All Rights Reserved",
     "icons": [{"icon": "fab fa-facebook-f"}, {"icon": "fab fa-twitter"}, {"icon": "fab fa-dribbble"}, {"icon": "fab fa-pinterest"}]
   }
 }
