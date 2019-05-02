@@ -1,0 +1,73 @@
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>{{global.name}}</title>
+
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/animate.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+        <link href="css/lightgallery.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    </head>
+
+    <body>
+
+        <main>
+            <section class="main">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3 col-sm-12 left">
+                            <div class="profile">
+                                <p><img src="{{page.profile-img}}"></p>
+                            </div>
+                            <ul class="nav">
+                                {{#page.nav}}
+                                    <li><a class="{{class}} showSection" id="{{id}}" href="{{href}}">{{text}}<i class="{{icon}}"></i></a></li>
+                                {{/page.nav}}
+                            </ul>
+                        </div>
+                        <div class="col-md-9 col-sm-12 right">
+                            <div class="body">
+                                <div class="head animated fadeInDown">
+                                    <h3 class="section-title">{{page.title}}</h3>
+                                </div>
+                                <div class="post blog-post">
+                                    <p><img src="{{page.blog-img}}"></p>
+                                    <h4>{{page.blog.title}}</h4>
+                                    <ul class="post-meta">
+                                        {{#page.blog.meta}}
+                                            <li>
+                                                <i class="{{icon}}"></i>
+                                                <a href="#">{{text}}</a>
+                                            </li>
+                                        {{/page.blog.meta}}
+                                    </ul>
+                                    <p class="post-desc">{{page.blog.desc}}</p>
+                                    <p class="post-desc">{{page.blog.desc2}}</p>
+                                </div>
+                            </div>
+
+                            {{>footer}}
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        
+    </body>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/lightgallery.js"></script>
+    <script src="js/lg-thumbnail.js"></script>
+    <script src="js/lg-fullscreen.js"></script>
+    <script src="js/custom.js"></script>
+  </body>
+</html>

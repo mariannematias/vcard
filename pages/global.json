@@ -1,0 +1,39 @@
+{ 
+  "nav": [ 
+    {
+      "text": "Profile",
+      "icon": "fas fa-user",
+      "id": "1",
+      "class": "active"
+    },
+    {
+      "text": "Portfolio",
+      "icon": "fas fa-toolbox",
+      "id": "2",
+      "class": ""
+    },
+    {
+      "text": "Resume",
+      "icon": "fas fa-file-word",
+      "id": "3",
+      "class": ""
+    },
+    {
+      "text": "Blog",
+      "icon": "fas fa-comment",
+      "id": "4",
+      "class": ""
+    },
+    {
+      "text": "Contact",
+      "icon": "fas fa-envelope",
+      "id": "5",
+      "class": ""
+    }
+  ],
+  "profile-img": "images/id.png",
+  "footer": {
+    "copyright": "© 2019 Franklin K. Walsh. All Rights Reserved",
+    "icons": [{"icon": "fab fa-facebook-f"}, {"icon": "fab fa-twitter"}, {"icon": "fab fa-dribbble"}, {"icon": "fab fa-pinterest"}]
+  }
+}

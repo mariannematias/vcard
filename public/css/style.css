@@ -156,7 +156,7 @@ ul {
 }
 
 .head {
-    padding-bottom: 1rem;
+    padding-bottom: .5rem;
     border-bottom: 1px solid #d9dbdd;
     position: relative;
 }
@@ -378,6 +378,9 @@ ul {
 .post img {
     padding-top: .7rem;
 }
+.blog-post img {
+    height: 370px;
+}
 .post-desc {
     color: #828282;
     font-size: .95rem;
@@ -396,6 +399,9 @@ ul {
     color: #a1a1a1;
     font-size: .7rem;
     font-weight: 300;
+}
+.post-meta li a:hover {
+    color: #2c383c;
 }
 .img-top {
     margin-top: .5rem;

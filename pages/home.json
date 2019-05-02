@@ -1,43 +1,5 @@
 { 
-  "nav": [ 
-    {
-      "text": "Profile",
-      "icon": "fas fa-user",
-      "id": "1",
-      "class": "active"
-    },
-    {
-      "text": "Portfolio",
-      "icon": "fas fa-toolbox",
-      "id": "2",
-      "class": ""
-    },
-    {
-      "text": "Resume",
-      "icon": "fas fa-file-word",
-      "id": "3",
-      "class": ""
-    },
-    {
-      "text": "Blog",
-      "icon": "fas fa-comment",
-      "id": "4",
-      "class": ""
-    },
-    {
-      "text": "Contact",
-      "icon": "fas fa-envelope",
-      "id": "5",
-      "class": ""
-    }
-  ],
-  "nav-right": {
-    "text": "Go to next/previous page",
-    "prev": "fas fa-arrow-circle-left",
-    "next": "fas fa-arrow-circle-right"
-  },
   "profile": {
-    "img": "images/id.png",
     "content": {
       "title": "Hello, I am",
       "name": "Franklin K. Walsh",
@@ -244,6 +206,7 @@
       {
         "img": "images/temp.jpg",
         "title": "Lorem donec massa et",
+        "href": "/blog",
         "meta": [
           {
             "icon": "far fa-calendar-alt",
@@ -268,6 +231,7 @@
         },
         "img": "images/temp2.jpg",
         "title": "Lorem donec massa et",
+        "href": "/blog",
         "meta": [
           {
             "icon": "far fa-calendar-alt",
@@ -295,6 +259,7 @@
         },
         "img": "images/temp3.jpg",
         "title": "Lorem donec massa et",
+        "href": "/blog",
         "meta": [
           {
             "icon": "far fa-calendar-alt",
@@ -316,6 +281,7 @@
   "contact": {
     "title": "Contact Us",
     "info": {
+      "img": "images/work7.jpg",
       "title": "Contact Info",
       "desc": "Lorem ipsum dolor sit amet, pede eu vitae. Justo quis sagittis, penatibus velit a quis, urna rutrum ac donec, a sed augue bibendum volutpat nam, amet vitae scelerisque porta adipiscing nullam at. Auctor ante enim pellentesque, suscipit quisque sed, tellus lacinia. Convallis condimentum suspendisse sit lorem, velit quis.",
       "meta": [
@@ -337,9 +303,5 @@
       "title": "Send us a message",
       "btntext": "Send message"
     }
-  },
-  "footer": {
-    "copyright": "© 2019 Franklin K. Walsh. All Rights Reserved",
-    "icons": [{"icon": "fab fa-facebook-f"}, {"icon": "fab fa-twitter"}, {"icon": "fab fa-dribbble"}, {"icon": "fab fa-pinterest"}]
   }
 }

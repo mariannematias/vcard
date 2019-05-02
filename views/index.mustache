@@ -23,16 +23,7 @@
             <section class="main">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-3 col-sm-12 left">
-                            <div class="profile">
-                                <p><img src="{{page.profile.img}}"></p>
-                            </div>
-                            <ul class="nav">
-                                {{#page.nav}}
-                                    <li><a class="{{class}} showSection" id="{{id}}" href="#">{{text}}<i class="{{icon}}"></i></a></li>
-                                {{/page.nav}}
-                            </ul>
-                        </div>
+                        {{>sidebar}}
                         <div class="col-md-9 col-sm-12 right">
                             <div class="body">
                                 <div id="section1" class="targetDiv profile-section">
@@ -58,11 +49,6 @@
                                 <div id="section2" class="targetDiv show work">
                                     <div class="head animated fadeInDown">
                                         <h3 class="section-title">{{page.work.title}}</h3>
-                                        <div class="controls">
-                                            <p>{{page.nav-right.text}}</p> 
-                                            <a href="#" class="control-btn btn-prev"><i class="{{page.nav-right.prev}}"></i></a>
-                                            <a href="#" class="control-btn btn-next"><i class="{{page.nav-right.next}}"></i></a>
-                                        </div>
                                     </div>
                                     <ul class="work-menu">
                                         {{#page.work.menu}}
@@ -87,11 +73,6 @@
                                 <div id="section3" class="targetDiv resume">
                                     <div class="head animated fadeInDown">
                                         <h3 class="section-title">{{page.resume.title}}</h3>
-                                        <div class="controls">
-                                            <p>{{page.nav-right.text}}</p> 
-                                            <a href="#" class="control-btn btn-prev"><i class="{{page.nav-right.prev}}"></i></a>
-                                            <a href="#" class="control-btn btn-next"><i class="{{page.nav-right.next}}"></i></a>
-                                        </div>
                                     </div>
                                     <h4 class="light">{{page.resume.educ.title}}</h4>
                                     <p class="line2"></p>
@@ -139,11 +120,6 @@
                                 <div id="section4" class="targetDiv blog">
                                     <div class="head animated fadeInDown">
                                         <h3 class="section-title">{{page.blog.title}}</h3>
-                                        <div class="controls">
-                                            <p>{{page.nav-right.text}}</p> 
-                                            <a href="#" class="control-btn btn-prev"><i class="{{page.nav-right.prev}}"></i></a>
-                                            <a href="#" class="control-btn btn-next"><i class="{{page.nav-right.next}}"></i></a>
-                                        </div>
                                     </div>
                                     {{#page.blog.post}}
                                         {{#full-img}}
@@ -165,7 +141,7 @@
                                                 <img src="{{img}}">
                                             </div>
                                             <div class="col-md-7 col-sm-12">
-                                                <h4><a href="#">{{title}}</a>
+                                                <h4><a href="{{href}}">{{title}}</a></h4>
                                                 <ul class="post-meta">
                                                     {{#meta}}
                                                         <li>
@@ -186,7 +162,7 @@
                                     </div>
                                     <div class="animated fadeIn">
                                         <div class="map">
-                                            <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d3851.3547633951384!2d120.59558231467157!3d15.138849389461496!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x3396f3ba2f2cd901%3A0xb645e35ce14c6163!2sIUTIS+Lighting%2C+419+Quirino+Extension+Belen+Homesite%2C+Angeles%2C+2009+Pampanga!3m2!1d15.1388494!2d120.597771!5e0!3m2!1sen!2sph!4v1556676769543!5m2!1sen!2sph" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                                            <img src="{{page.contact.info.img}}">
                                         </div>
                                         <h4>{{page.contact.info.title}}</h4>
                                         <p class="post-desc">{{page.contact.info.desc}}</p>
@@ -218,20 +194,7 @@
                                 </div>
                             </div>
 
-                            <footer>
-                                <div class="container">
-                                    <div class="footer">
-                                        <p class="copyright">{{page.footer.copyright}}</p>
-                                        <ul class="icons">
-                                            {{#page.footer.icons}}
-                                                <li>
-                                                    <a href="#"><i class="{{icon}}"></i></a>
-                                                </li>
-                                            {{/page.footer.icons}}
-                                        </ul>
-                                    </div>
-                                </div>
-                            </footer>
+                            {{>footer}}
                         </div>
                     </div>
                 </div>

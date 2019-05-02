@@ -2,9 +2,25 @@ $(document).ready(function(){
     $("#lightgallery").lightGallery({
         download: false
     }); 
-    $("#section1").show();  
-    $("#section2, #section3, #section4, #section5").hide();
-
+    var pageURL = $(location).attr("href");
+    var section = pageURL.split('/');
+    if (section[section.length-1] == '' || section[section.length-1] == '#') {
+        $("#section1").show();  
+        $("#section2, #section3, #section4, #section5").hide();
+    } else {
+        $(".targetDiv").hide();
+        $('.show').removeClass('show');
+        $(section[section.length-1]).show().addClass('show');
+        if (section[section.length-1] == 'blog') {
+            $(".nav li a").removeClass("active");
+            $(".nav li a#4").addClass("active");
+        } else {
+            var navID = parseInt($('.show').attr('id').replace('section',''));
+            $(".nav li a").removeClass("active");
+            $(".nav li a#"+navID).addClass("active");
+        }
+    }
+    
     /* show/hide sections when navigation is clicked */
     $(".showSection").click(function(){
         $(".targetDiv").hide();
@@ -25,30 +41,6 @@ $(document).ready(function(){
         } else {
             $(".thumb").hide();
             $('.cat'+$(this).attr("id")).show();
-        }
-    });
-
-    /* show/hide sections when next/prev is clicked */
-    $('.btn-next').click(function(){
-        if ($('.show').next('.targetDiv').length) {
-            $('.show').hide().next('.targetDiv').show();
-            var section = parseInt($('.show').attr('id').replace('section','')) + 1;
-            $(".nav li a").removeClass("active");
-            $(".nav li a#"+section).addClass("active");
-            $('.show').removeClass('show')
-                        .next('.targetDiv')
-                        .addClass('show');
-        }
-    });
-    $('.btn-prev').click(function(){
-        if ($('.show').prev('.targetDiv').length) {
-            $('.show').hide().prev('.targetDiv').show();
-            var section = parseInt($('.show').attr('id').replace('section','')) - 1;
-            $(".nav li a").removeClass("active");
-            $(".nav li a#"+section).addClass("active");
-            $('.show').removeClass('show')
-                        .prev('.targetDiv')
-                        .addClass('show');
         }
     });
 });
