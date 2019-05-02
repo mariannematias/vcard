@@ -288,19 +288,19 @@ ul {
     -webkit-animation: bar-before 1 2s;
 }
 .bar1::after{
-    max-width: 71%;
+    max-width: 56%;
 }
 .bar2::after{
-    max-width: 85%;
+    max-width: 89%;
 }
 .bar3::after{
-    max-width: 76%;
+    max-width: 92%;
 }
 .bar4::after{
-    max-width: 53%;
+    max-width: 76%;
 }
 .bar5::after{
-    max-width: 69%;
+    max-width: 51%;
 }
 @keyframes bar-before{
     0%{

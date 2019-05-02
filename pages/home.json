@@ -7,7 +7,7 @@
       "class": "active"
     },
     {
-      "text": "Work",
+      "text": "Portfolio",
       "icon": "fas fa-toolbox",
       "id": "2",
       "class": ""
@@ -68,7 +68,7 @@
           },
           {
             "label": "website",
-            "desc": "www.domain.net"
+            "desc": "www.franklinwalsh.com"
           }
         ]
       }
@@ -142,19 +142,19 @@
       "title": "Education",
       "schools": [
         {
-          "school": "Academy of Art University",
+          "school": "Hawthorne Academy",
           "year": "2001 - 2004",
-          "desc": "Academy of Art University's School of Web Design & New Media is the intersection between traditional design and new technologies."
-        },
-        {
-          "school": "IT Technical Institute",
-          "year": "2005 - 2008",
-          "desc": "Information technology (IT) workers can be found in many types of organizations. According to the U.S. Department of Labor, 'In the modern workplace, it is imperative that Information Technology (IT) works both effectively and reliably'"
+          "desc": "Lorem donec massa sapien faucibus et purus non enim praesent elementum facilisis leo at imperdiet dui accumsan sit amet eu lobortis elementum nibh tellus molestie nunc non blandit massa."
         },
         {
           "school": "Web Design School",
+          "year": "2005 - 2008",
+          "desc": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'"
+        },
+        {
+          "school": "Developer on Kennedy University",
           "year": "2009 - 2012",
-          "desc": "This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat."
+          "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
         }
       ]
     },
@@ -162,29 +162,29 @@
       "title": "Skills",
       "graph": [
         {
-          "text": "Wordpress Development",
+          "text": "Shopify Development",
           "class": "bar bar1",
-          "percent": "71%"
+          "percent": "56%"
         },
         {
-          "text": "Photoshop",
+          "text": "Photoshop & Illustrator",
           "class": "bar bar2",
-          "percent": "85%"
+          "percent": "89%"
         },
         {
           "text": "HTML5/CSS3",
           "class": "bar bar3",
+          "percent": "92%"
+        },
+        {
+          "text": "Wordpress Development",
+          "class": "bar bar4",
           "percent": "76%"
         },
         {
-          "text": "Ruby on Rails",
-          "class": "bar bar4",
-          "percent": "53%"
-        },
-        {
-          "text": "Social Marketing",
+          "text": "Video Editing",
           "class": "bar bar5",
-          "percent": "69%"
+          "percent": "51%"
         }
       ]
     },
@@ -221,17 +221,17 @@
       "title": "Work Experience",
       "exp": [
         {
-          "school": "Graphic River",
+          "school": "Graphic Designers Inc",
           "year": "2001 - 2004",
           "desc": "Lorem ipsum dolor sit amet, pede eu vitae. Justo quis sagittis, penatibus velit a quis, urna rutrum ac donec, a sed augue bibendum volutpat nam, amet vitae scelerisque porta adipiscing nullam at."
         },
         {
-          "school": "Video Hive",
+          "school": "TV Video Plus",
           "year": "2005 - 2008",
           "desc": "Auctor ante enim pellentesque, suscipit quisque sed, tellus lacinia. Convallis condimentum suspendisse sit lorem, velit quis, suspendisse lacinia nam.Vel odio fringilla, nostra class nulla amet eleifend non sapien, fusce magna a lectus nec, in a lorem non voluptatibus suspendisse mauris."
         },
         {
-          "school": "Themeforest",
+          "school": "CodeSchools",
           "year": "2009 - 2014",
           "desc": "Accumsan at, malesuada dolor rhoncus ut in. Id turpis, sit ut nam dignissim, scelerisque lorem sem, eu in tempus. Volutpat venenatis accumsan id quia purus dolor, eget eget arcu mi in tristique, pede sit."
         }
@@ -243,7 +243,7 @@
     "post": [
       {
         "img": "images/temp.jpg",
-        "title": "Standard Post with Image",
+        "title": "Lorem donec massa et",
         "meta": [
           {
             "icon": "far fa-calendar-alt",
@@ -267,7 +267,7 @@
           "icon": "fas fa-link"
         },
         "img": "images/temp2.jpg",
-        "title": "Standard Post with Image",
+        "title": "Lorem donec massa et",
         "meta": [
           {
             "icon": "far fa-calendar-alt",
@@ -287,14 +287,14 @@
       {
         "full-img": {
           "color": "#2d383c",
-          "text": "This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aene.This is photoshop's version f Lorem Ipsum.",
+          "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nunc sed velit dignissim sodales ut eu. Tristique nulla aliquet enim tortor at.",
           "text-color": "#ffd42d",
           "icon2": "fas fa-quote-left",
           "text2": "John Smith",
           "text-color2": "#fff"
         },
         "img": "images/temp3.jpg",
-        "title": "Standard Post with Image",
+        "title": "Lorem donec massa et",
         "meta": [
           {
             "icon": "far fa-calendar-alt",
@@ -309,7 +309,7 @@
             "text": "10 Comments"
           }
         ],
-        "desc": "This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit."
+        "desc": "Phasellus torquent nunc vitae. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit."
       }
     ]
   },
