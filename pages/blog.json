@@ -1,5 +1,5 @@
 { 
-  "profile-img": "images/id.png",
+  "profile-img": "https://lh3.googleusercontent.com/5_ps3A1UJtBP9KOidJnHOwBXgeVz1B7vd7Oo0x58J7smckoxjl7QqYUr4ollhQLOfclt1LspdsyTiGBS4hntXefc",
   "nav": [ 
   {
     "text": "Profile",
@@ -38,7 +38,7 @@
   }
 ],
   "title": "Blog",
-  "blog-img": "images/temp3.jpg",
+  "blog-img": "https://lh3.googleusercontent.com/4voDWx8oTiqkkAWs1mraO1bCcFPA6L0j762--fVPAgBsNaqJZ0Tou215A_kBw4qA71rM8WYlLqSHR-CNdzBM1DWmMtQ",
   "blog": {
     "title": "Lorem donec massa et",
     "meta": [

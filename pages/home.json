@@ -47,53 +47,53 @@
     ],
     "pics": [
       {
-        "img": "images/work1.jpg",
+        "img": "https://lh3.googleusercontent.com/xEFO-3aJU0Rzq1ivmHx88wtvdryirYMsqBTVdTWkEw38ZipfjDOJNUeitidiSXpMcadgPVpOVnlcCCirK4pVcGiU1Zc",
         "class": "cat1 cat2"
       }, 
       {
-        "img": "images/work2.jpg",
+        "img": "https://lh3.googleusercontent.com/zqdNBHakvxumOgRHKwt8M3a0vEy_k3UMQuk7o7UZ-5NxEWBs2PEhYzIL3_ibal83TestQKVAYYVGxEOXvrsazIJXuQ",
         "class": "cat2 cat3"
       }, 
       {
-        "img": "images/work3.jpg",
+        "img": "https://lh3.googleusercontent.com/Pzm14ecqbQ39wgOQAwadXvOt71o5-JMSXcBLEkMnM1M_3VhaOr0WGUoLkQ9SwqSv1nbXwVCw92XjALQAQ3qAfz8DCQ",
         "class": "cat1"
       }, 
       {
-        "img": "images/work1-a.jpg",
+        "img": "https://lh3.googleusercontent.com/SVZ5y_jT5lLMtftQAtINRySL2m6N63_LTqGbnkbvWl3g3sJxBlGhUlTb51lAnZFvUEPoHkpQAKkT8rOctUF9OwjzlQ",
         "class": "cat3 cat2"
       }, 
       {
-        "img": "images/work2-a.jpg",
+        "img": "https://lh3.googleusercontent.com/7ewtAWPy1NqNfflKzoiKD-JqFLKkK4QAvoHvNyUOSWam37bCcwFWfen0OuRx5N9GCnLuNZc26xAJ-syzZoWUYmJJUg",
         "class": "cat3"
       }, 
       {
-        "img": "images/work3-a.jpg",
+        "img": "https://lh3.googleusercontent.com/E0ViP4oZhax8zoGj7NsakRvrJdxc2MkvJ-6F5Kon9K3Pje__zIU3LY9J3Cv59V7FYhMtUdfUVzW_4cIXsJp_9hZ8CA",
         "class": "cat3 cat1"
       }
     ],
     "pics2": [
       {
-        "img": "images/work4.jpg",
+        "img": "https://lh3.googleusercontent.com/nHlj93jNiqzyfAPJnm56yGqDvxGR9y3oFYQ53ywXaOHDuiybI9A8rmvD_a1NUAOb9NfJmxYvFIMZt9JClo7orCHz6g",
         "class": "cat1 cat2"
       }, 
       {
-        "img": "images/work5.jpg",
+        "img": "https://lh3.googleusercontent.com/GAF18GyCtV9J_WdYZAzwvZ2LRVAewv-3_ngaOkJGcL46F6Jm9A9zO5BHHWXL8A6VaFMxXCcuufv6BXDL5AQy783kdKQ",
         "class": "cat3"
       },
       {
-        "img": "images/work6.jpg",
+        "img": "https://lh3.googleusercontent.com/0QvswXU20mr0QcNLuWaBeTQrlTka78SP9KGtHP_VAzV8pSaSukdyxY4_och-WaQgIA2roaRqewBqBH4MkcxVN4dpD6E",
         "class": "cat2"
       },
       {
-        "img": "images/work2-a.jpg",
+        "img": "https://lh3.googleusercontent.com/7ewtAWPy1NqNfflKzoiKD-JqFLKkK4QAvoHvNyUOSWam37bCcwFWfen0OuRx5N9GCnLuNZc26xAJ-syzZoWUYmJJUg",
         "class": "cat4"
       },
       {
-        "img": "images/work3-a.jpg",
+        "img": "https://lh3.googleusercontent.com/E0ViP4oZhax8zoGj7NsakRvrJdxc2MkvJ-6F5Kon9K3Pje__zIU3LY9J3Cv59V7FYhMtUdfUVzW_4cIXsJp_9hZ8CA",
         "class": "cat4"
       },
       {
-        "img": "images/work1-a.jpg",
+        "img": "https://lh3.googleusercontent.com/SVZ5y_jT5lLMtftQAtINRySL2m6N63_LTqGbnkbvWl3g3sJxBlGhUlTb51lAnZFvUEPoHkpQAKkT8rOctUF9OwjzlQ",
         "class": "cat4"
         }
     ]
@@ -204,7 +204,7 @@
     "title": "Blog",
     "post": [
       {
-        "img": "images/temp.jpg",
+        "img": "https://lh3.googleusercontent.com/qdRZAdvEvbzhqQIBjbHbEn2LT3r1J_m-c0-fFUoDyGV30WD_lio2r6EwcttkDBcWiqLLGfa93aF5idDSnBIgQqRGzA",
         "title": "Lorem donec massa et",
         "href": "/blog",
         "meta": [
@@ -229,7 +229,7 @@
           "text": "www.themeforest.net",
           "icon": "fas fa-link"
         },
-        "img": "images/temp2.jpg",
+        "img": "https://lh3.googleusercontent.com/nd5lxRCqGEFlfy2bYEs0UrWbnPLUlkt9-zFe9OuFV5903CB6XD_XqBTd1J15XdxRPwzpJ9SVZvHl0frwNfyJhmY2sA",
         "title": "Lorem donec massa et",
         "href": "/blog",
         "meta": [
@@ -257,7 +257,7 @@
           "text2": "John Smith",
           "text-color2": "#fff"
         },
-        "img": "images/temp3.jpg",
+        "img": "https://lh3.googleusercontent.com/4voDWx8oTiqkkAWs1mraO1bCcFPA6L0j762--fVPAgBsNaqJZ0Tou215A_kBw4qA71rM8WYlLqSHR-CNdzBM1DWmMtQ",
         "title": "Lorem donec massa et",
         "href": "/blog",
         "meta": [
@@ -281,7 +281,7 @@
   "contact": {
     "title": "Contact Us",
     "info": {
-      "img": "images/work7.jpg",
+      "img": "https://lh3.googleusercontent.com/4MOXK-SoVmbKrzLpTNn-FlckgR3gybgn0hWo6eTUiH7CK94ELCBNY0wXnjb4m8zVvI_CKBrZrEFhJXlkX1R22O9K",
       "title": "Contact Info",
       "desc": "Lorem ipsum dolor sit amet, pede eu vitae. Justo quis sagittis, penatibus velit a quis, urna rutrum ac donec, a sed augue bibendum volutpat nam, amet vitae scelerisque porta adipiscing nullam at. Auctor ante enim pellentesque, suscipit quisque sed, tellus lacinia. Convallis condimentum suspendisse sit lorem, velit quis.",
       "meta": [
