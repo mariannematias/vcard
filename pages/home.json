@@ -1,39 +1,41 @@
 { 
   "profile": {
     "content": {
-      "title": "Hello, I am",
-      "name": "Franklin K. Walsh",
-      "position": "Designer and Front-end Developer",
-      "desc": "Creative Senior Front-end Developer with 15+ years of experience leveraging JavaScript to build responsive websites, mobile apps, and interactive features that drive business growth and improve UX.",
       "info": {
-        "title": "Personal Info",
-        "details": [
-          {
-            "label": "name",
-            "desc": "Franklin K. Walsh"
-          },
-          {
-            "label": "date of birth",
-            "desc": "March 16, 1987"
-          },
-          {
-            "label": "e-mail",
-            "desc": "frank@yourdomain.com"
-          },
-          {
-            "label": "address",
-            "desc": "121 King St, Melbourne VIC"
-          },
-          {
-            "label": "phone",
-            "desc": "012-3456-7890"
-          },
-          {
-            "label": "website",
-            "desc": "www.franklinwalsh.com"
-          }
-        ]
+        "title": "Personal Info"
       }
+    }
+  },
+  "details": {
+    "name": {
+      "label": "name",
+      "text": "Franklin K. Walsh",
+      "show_or_hide": true
+    },
+    "dob": {
+      "label": "date of birth",
+      "text": "March 16, 1987",
+      "show_or_hide": true
+    },
+    "email": {
+      "label": "e-mail",
+      "text": "frank@yourdomain.com",
+      "show_or_hide": true
+    },
+    "address": {
+      "label": "address",
+      "text": "121 King St, Melbourne VIC",
+      "show_or_hide": true
+    },
+    "phone": {
+      "label": "phone",
+      "text": "012-3456-7890",
+      "show_or_hide": true
+    },
+    "website": {
+      "label": "website",
+      "text": "www.franklinwalsh.com",
+      "show_or_hide": true
     }
   },
   "work": {
@@ -101,24 +103,7 @@
   "resume": {
     "title": "Resume",
     "educ": {
-      "title": "Education",
-      "schools": [
-        {
-          "school": "Hawthorne Academy",
-          "year": "2001 - 2004",
-          "desc": "Lorem donec massa sapien faucibus et purus non enim praesent elementum facilisis leo at imperdiet dui accumsan sit amet eu lobortis elementum nibh tellus molestie nunc non blandit massa."
-        },
-        {
-          "school": "Web Design School",
-          "year": "2005 - 2008",
-          "desc": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'"
-        },
-        {
-          "school": "Developer on Kennedy University",
-          "year": "2009 - 2012",
-          "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-        }
-      ]
+      "title": "Education"
     },
     "skills": {
       "title": "Skills",
@@ -180,103 +165,11 @@
       ]
     },
     "work": {
-      "title": "Work Experience",
-      "exp": [
-        {
-          "school": "Graphic Designers Inc",
-          "year": "2001 - 2004",
-          "desc": "Lorem ipsum dolor sit amet, pede eu vitae. Justo quis sagittis, penatibus velit a quis, urna rutrum ac donec, a sed augue bibendum volutpat nam, amet vitae scelerisque porta adipiscing nullam at."
-        },
-        {
-          "school": "TV Video Plus",
-          "year": "2005 - 2008",
-          "desc": "Auctor ante enim pellentesque, suscipit quisque sed, tellus lacinia. Convallis condimentum suspendisse sit lorem, velit quis, suspendisse lacinia nam.Vel odio fringilla, nostra class nulla amet eleifend non sapien, fusce magna a lectus nec, in a lorem non voluptatibus suspendisse mauris."
-        },
-        {
-          "school": "CodeSchools",
-          "year": "2009 - 2014",
-          "desc": "Accumsan at, malesuada dolor rhoncus ut in. Id turpis, sit ut nam dignissim, scelerisque lorem sem, eu in tempus. Volutpat venenatis accumsan id quia purus dolor, eget eget arcu mi in tristique, pede sit."
-        }
-      ]
+      "title": "Work Experience"
     }
   },
   "blog": {
-    "title": "Blog",
-    "post": [
-      {
-        "img": "https://lh3.googleusercontent.com/qdRZAdvEvbzhqQIBjbHbEn2LT3r1J_m-c0-fFUoDyGV30WD_lio2r6EwcttkDBcWiqLLGfa93aF5idDSnBIgQqRGzA",
-        "title": "Lorem donec massa et",
-        "href": "/blog",
-        "meta": [
-          {
-            "icon": "far fa-calendar-alt",
-            "text": "30 March"
-          },
-          {
-            "icon": "fas fa-user",
-            "text": "Admin"
-          },
-          {
-            "icon": "fas fa-comments",
-            "text": "10 Comments"
-          }
-        ],
-        "desc": "Auctor ante enim pellentesque, suscipit quisque sed, tellus lacinia. Convallis condimentum suspendisse sit lorem, velit quis, suspendisse lacinia nam.Vel odio fringilla, nostra class nulla amet eleifend non sapien, fusce magna a lectus nec, in a lorem non voluptatibus suspendisse mauris."
-      },
-      {
-        "full-img": {
-          "color": "#ffd42d",
-          "text": "www.themeforest.net",
-          "icon": "fas fa-link"
-        },
-        "img": "https://lh3.googleusercontent.com/nd5lxRCqGEFlfy2bYEs0UrWbnPLUlkt9-zFe9OuFV5903CB6XD_XqBTd1J15XdxRPwzpJ9SVZvHl0frwNfyJhmY2sA",
-        "title": "Lorem donec massa et",
-        "href": "/blog",
-        "meta": [
-          {
-            "icon": "far fa-calendar-alt",
-            "text": "30 March"
-          },
-          {
-            "icon": "fas fa-user",
-            "text": "Admin"
-          },
-          {
-            "icon": "fas fa-comments",
-            "text": "10 Comments"
-          }
-        ],
-        "desc": "Phasellus torquent nunc vitae, tristique id aperiam consequat, interdum ac lacus nunc. Parturient massa at sapien purus ullamcorper elit, sit eu, congue scelerisque in sollicitudin, malesuada nam non ligula malesuada consectetuer."
-      },
-      {
-        "full-img": {
-          "color": "#2d383c",
-          "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nunc sed velit dignissim sodales ut eu. Tristique nulla aliquet enim tortor at.",
-          "text-color": "#ffd42d",
-          "icon2": "fas fa-quote-left",
-          "text2": "John Smith",
-          "text-color2": "#fff"
-        },
-        "img": "https://lh3.googleusercontent.com/4voDWx8oTiqkkAWs1mraO1bCcFPA6L0j762--fVPAgBsNaqJZ0Tou215A_kBw4qA71rM8WYlLqSHR-CNdzBM1DWmMtQ",
-        "title": "Lorem donec massa et",
-        "href": "/blog",
-        "meta": [
-          {
-            "icon": "far fa-calendar-alt",
-            "text": "30 March"
-          },
-          {
-            "icon": "fas fa-user",
-            "text": "Admin"
-          },
-          {
-            "icon": "fas fa-comments",
-            "text": "10 Comments"
-          }
-        ],
-        "desc": "Phasellus torquent nunc vitae. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit."
-      }
-    ]
+    "title": "Blog"
   },
   "contact": {
     "title": "Contact Us",

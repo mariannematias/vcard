@@ -23,16 +23,7 @@
             <section class="main">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-3 col-sm-12 left">
-                            <div class="profile">
-                                <p><img src="{{{page.profile-img}}}"></p>
-                            </div>
-                            <ul class="nav">
-                                {{#page.nav}}
-                                    <li><a class="{{class}} showSection" id="{{id}}" href="{{href}}">{{text}}<i class="{{icon}}"></i></a></li>
-                                {{/page.nav}}
-                            </ul>
-                        </div>
+                        {{>sidebar}}
                         <div class="col-md-9 col-sm-12 right">
                             <div class="body">
                                 <div class="head animated fadeInDown">

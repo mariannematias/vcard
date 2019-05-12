@@ -1,4 +1,9 @@
 { 
+  "info": {
+    "name": "Franklin K. Walsh",
+    "position": "Designer and Front-end Developer",
+    "bio": "Creative Senior Front-end Developer with 15+ years of experience leveraging JavaScript to build responsive websites, mobile apps, and interactive features that drive business growth and improve UX."
+  },
   "nav": [ 
     {
       "text": "Profile",
@@ -31,9 +36,45 @@
       "class": ""
     }
   ],
-  "profile-img": "https://lh3.googleusercontent.com/5_ps3A1UJtBP9KOidJnHOwBXgeVz1B7vd7Oo0x58J7smckoxjl7QqYUr4ollhQLOfclt1LspdsyTiGBS4hntXefc",
+  "img_profile": "https://lh3.googleusercontent.com/5_ps3A1UJtBP9KOidJnHOwBXgeVz1B7vd7Oo0x58J7smckoxjl7QqYUr4ollhQLOfclt1LspdsyTiGBS4hntXefc",
   "footer": {
-    "copyright": "© 2019 Franklin K. Walsh. All Rights Reserved",
-    "icons": [{"icon": "fab fa-facebook-f"}, {"icon": "fab fa-twitter"}, {"icon": "fab fa-dribbble"}, {"icon": "fab fa-pinterest"}]
+    "copyright": "© 2019 Franklin K. Walsh. All Rights Reserved"
+  },
+  "social": {
+    "facebook": {
+      "name": "facebook",
+      "url": "https://www.facebook.com",
+      "show_or_hide": true
+    },
+    "twitter": {
+      "name": "twitter",
+      "url": "https://www.twitter.com",
+      "show_or_hide": true
+    },
+    "dribbble": {
+      "name": "dribbble",
+      "url": "https://www.dribbble.com",
+      "show_or_hide": true
+    },
+    "pinterest": {
+      "name": "pinterest",
+      "url": "https://www.pinterest.com",
+      "show_or_hide": true
+    },
+    "linkedin": {
+      "name": "linkedin",
+      "url": "https://www.linkedin.com",
+      "show_or_hide": true
+    },
+    "youtube": {
+      "name": "youtube",
+      "url": "https://www.youtube.com",
+      "show_or_hide": true
+    },
+    "instagram": {
+      "name": "instagram",
+      "url": "https://www.instagram.com",
+      "show_or_hide": true
+    }
   }
 }
