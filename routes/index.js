@@ -25,6 +25,12 @@ router.get('/', (req, res) => {
 	})
 	.then(posts => {
 		data['posts'] = posts
+		const referencesCtr = new controllers.reference()
+		return referencesCtr.get()
+		//return turbo.currentApp(process.env.TURBO_ENV)
+	})
+	.then(references => {
+		data['references'] = references
 		return turbo.currentApp(process.env.TURBO_ENV)
 	})
 	.then(site => {

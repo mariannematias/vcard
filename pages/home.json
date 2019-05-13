@@ -1,11 +1,4 @@
 { 
-  "profile": {
-    "content": {
-      "info": {
-        "title": "Personal Info"
-      }
-    }
-  },
   "details": {
     "name": {
       "label": "name",
@@ -38,159 +31,28 @@
       "show_or_hide": true
     }
   },
-  "work": {
-    "title": "Portfolio",
-    "menu": [
-      {"text": "All", "class": "active", "id": "all"}, 
-      {"text": "Web Design", "class": "", "id": "1"}, 
-      {"text": "App Icons", "class": "", "id": "2"}, 
-      {"text": "Ios App UI", "class": "", "id": "3"}, 
-      {"text": "Illustration", "class": "", "id": "4"}
-    ],
-    "pics": [
-      {
-        "img": "https://lh3.googleusercontent.com/xEFO-3aJU0Rzq1ivmHx88wtvdryirYMsqBTVdTWkEw38ZipfjDOJNUeitidiSXpMcadgPVpOVnlcCCirK4pVcGiU1Zc",
-        "class": "cat1 cat2"
-      }, 
-      {
-        "img": "https://lh3.googleusercontent.com/zqdNBHakvxumOgRHKwt8M3a0vEy_k3UMQuk7o7UZ-5NxEWBs2PEhYzIL3_ibal83TestQKVAYYVGxEOXvrsazIJXuQ",
-        "class": "cat2 cat3"
-      }, 
-      {
-        "img": "https://lh3.googleusercontent.com/Pzm14ecqbQ39wgOQAwadXvOt71o5-JMSXcBLEkMnM1M_3VhaOr0WGUoLkQ9SwqSv1nbXwVCw92XjALQAQ3qAfz8DCQ",
-        "class": "cat1"
-      }, 
-      {
-        "img": "https://lh3.googleusercontent.com/SVZ5y_jT5lLMtftQAtINRySL2m6N63_LTqGbnkbvWl3g3sJxBlGhUlTb51lAnZFvUEPoHkpQAKkT8rOctUF9OwjzlQ",
-        "class": "cat3 cat2"
-      }, 
-      {
-        "img": "https://lh3.googleusercontent.com/7ewtAWPy1NqNfflKzoiKD-JqFLKkK4QAvoHvNyUOSWam37bCcwFWfen0OuRx5N9GCnLuNZc26xAJ-syzZoWUYmJJUg",
-        "class": "cat3"
-      }, 
-      {
-        "img": "https://lh3.googleusercontent.com/E0ViP4oZhax8zoGj7NsakRvrJdxc2MkvJ-6F5Kon9K3Pje__zIU3LY9J3Cv59V7FYhMtUdfUVzW_4cIXsJp_9hZ8CA",
-        "class": "cat3 cat1"
-      }
-    ],
-    "pics2": [
-      {
-        "img": "https://lh3.googleusercontent.com/nHlj93jNiqzyfAPJnm56yGqDvxGR9y3oFYQ53ywXaOHDuiybI9A8rmvD_a1NUAOb9NfJmxYvFIMZt9JClo7orCHz6g",
-        "class": "cat1 cat2"
-      }, 
-      {
-        "img": "https://lh3.googleusercontent.com/GAF18GyCtV9J_WdYZAzwvZ2LRVAewv-3_ngaOkJGcL46F6Jm9A9zO5BHHWXL8A6VaFMxXCcuufv6BXDL5AQy783kdKQ",
-        "class": "cat3"
-      },
-      {
-        "img": "https://lh3.googleusercontent.com/0QvswXU20mr0QcNLuWaBeTQrlTka78SP9KGtHP_VAzV8pSaSukdyxY4_och-WaQgIA2roaRqewBqBH4MkcxVN4dpD6E",
-        "class": "cat2"
-      },
-      {
-        "img": "https://lh3.googleusercontent.com/7ewtAWPy1NqNfflKzoiKD-JqFLKkK4QAvoHvNyUOSWam37bCcwFWfen0OuRx5N9GCnLuNZc26xAJ-syzZoWUYmJJUg",
-        "class": "cat4"
-      },
-      {
-        "img": "https://lh3.googleusercontent.com/E0ViP4oZhax8zoGj7NsakRvrJdxc2MkvJ-6F5Kon9K3Pje__zIU3LY9J3Cv59V7FYhMtUdfUVzW_4cIXsJp_9hZ8CA",
-        "class": "cat4"
-      },
-      {
-        "img": "https://lh3.googleusercontent.com/SVZ5y_jT5lLMtftQAtINRySL2m6N63_LTqGbnkbvWl3g3sJxBlGhUlTb51lAnZFvUEPoHkpQAKkT8rOctUF9OwjzlQ",
-        "class": "cat4"
-        }
-    ]
-  },
   "resume": {
     "title": "Resume",
     "educ": {
       "title": "Education"
     },
     "skills": {
-      "title": "Skills",
-      "graph": [
-        {
-          "text": "Shopify Development",
-          "class": "bar bar1",
-          "percent": "56%"
-        },
-        {
-          "text": "Photoshop & Illustrator",
-          "class": "bar bar2",
-          "percent": "89%"
-        },
-        {
-          "text": "HTML5/CSS3",
-          "class": "bar bar3",
-          "percent": "92%"
-        },
-        {
-          "text": "Wordpress Development",
-          "class": "bar bar4",
-          "percent": "76%"
-        },
-        {
-          "text": "Video Editing",
-          "class": "bar bar5",
-          "percent": "51%"
-        }
-      ]
+      "list": "Shopify:56, Photoshop:89, HTML5/CSS3:92",
+      "title": "Skills"
     },
     "services": {
-      "title": "Services",
-      "list": [
-        {
-          "text": "Design",
-          "icon": "fas fa-cloud"
-        },
-        {
-          "text": "Coding",
-          "icon": "far fa-smile"
-        },
-        {
-          "text": "Responsive",
-          "icon": "fas fa-desktop"
-        },
-        {
-          "text": "Planning",
-          "icon": "fas fa-text-width"
-        },
-        {
-          "text": "Wordpress",
-          "icon": "fab fa-wordpress"
-        },
-        {
-          "text": "Photography",
-          "icon": "fas fa-image"
-        }
-      ]
+      "title": "Services"
     },
     "work": {
       "title": "Work Experience"
     }
   },
-  "blog": {
-    "title": "Blog"
-  },
   "contact": {
     "title": "Contact Us",
     "info": {
-      "img": "https://lh3.googleusercontent.com/4MOXK-SoVmbKrzLpTNn-FlckgR3gybgn0hWo6eTUiH7CK94ELCBNY0wXnjb4m8zVvI_CKBrZrEFhJXlkX1R22O9K",
+      "img_header": "https://lh3.googleusercontent.com/4MOXK-SoVmbKrzLpTNn-FlckgR3gybgn0hWo6eTUiH7CK94ELCBNY0wXnjb4m8zVvI_CKBrZrEFhJXlkX1R22O9K",
       "title": "Contact Info",
-      "desc": "Lorem ipsum dolor sit amet, pede eu vitae. Justo quis sagittis, penatibus velit a quis, urna rutrum ac donec, a sed augue bibendum volutpat nam, amet vitae scelerisque porta adipiscing nullam at. Auctor ante enim pellentesque, suscipit quisque sed, tellus lacinia. Convallis condimentum suspendisse sit lorem, velit quis.",
-      "meta": [
-        {
-          "icon": "fas fa-home",
-          "text": "lorem ipsum street"
-        },
-        {
-          "icon": "fas fa-phone",
-          "text": "+399 (500) 321 9548"
-        },
-        {
-          "icon": "fas fa-home",
-          "text": "info@domain.com"
-        }
-      ]
+      "desc": "Lorem ipsum dolor sit amet, pede eu vitae. Justo quis sagittis, penatibus velit a quis, urna rutrum ac donec, a sed augue bibendum volutpat nam, amet vitae scelerisque porta adipiscing nullam at. Auctor ante enim pellentesque, suscipit quisque sed, tellus lacinia. Convallis condimentum suspendisse sit lorem, velit quis."
     },
     "message": {
       "title": "Send us a message",

@@ -4,38 +4,24 @@
     "position": "Designer and Front-end Developer",
     "bio": "Creative Senior Front-end Developer with 15+ years of experience leveraging JavaScript to build responsive websites, mobile apps, and interactive features that drive business growth and improve UX."
   },
-  "nav": [ 
-    {
+  "nav": {
+    "profile": {
       "text": "Profile",
-      "icon": "fas fa-user",
-      "id": "1",
-      "class": "active"
+      "show_or_hide": true
     },
-    {
-      "text": "Portfolio",
-      "icon": "fas fa-toolbox",
-      "id": "2",
-      "class": ""
-    },
-    {
+    "resume": {
       "text": "Resume",
-      "icon": "fas fa-file-word",
-      "id": "3",
-      "class": ""
+      "show_or_hide": true
     },
-    {
+    "blog": {
       "text": "Blog",
-      "icon": "fas fa-comment",
-      "id": "4",
-      "class": ""
+      "show_or_hide": true
     },
-    {
+    "contact": {
       "text": "Contact",
-      "icon": "fas fa-envelope",
-      "id": "5",
-      "class": ""
+      "show_or_hide": true
     }
-  ],
+  },
   "img_profile": "https://lh3.googleusercontent.com/5_ps3A1UJtBP9KOidJnHOwBXgeVz1B7vd7Oo0x58J7smckoxjl7QqYUr4ollhQLOfclt1LspdsyTiGBS4hntXefc",
   "footer": {
     "copyright": "© 2019 Franklin K. Walsh. All Rights Reserved"

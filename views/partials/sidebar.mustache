@@ -3,8 +3,20 @@
         <p><img src="{{{global.img_profile}}}=s120-c"></p>
     </div>
     <ul class="nav">
-        {{#global.nav}}
-            <li><a class="{{class}} showSection" id="{{id}}" href="#">{{text}}<i class="{{icon}}"></i></a></li>
-        {{/global.nav}}
+        {{#global.nav.profile.show_or_hide}}
+            <li><a class="active showSection" id="1" href="#">{{global.nav.profile.text}}<i class="fas fa-user"></i></a></li>
+        {{/global.nav.profile.show_or_hide}}
+
+        {{#global.nav.resume.show_or_hide}}
+            <li><a class="showSection" id="3" href="#">{{global.nav.resume.text}}<i class="fas fa-file-word"></i></a></li>
+        {{/global.nav.resume.show_or_hide}}
+
+        {{#global.nav.blog.show_or_hide}}
+            <li><a class="showSection" id="4" href="#">{{global.nav.blog.text}}<i class="fas fa-comment"></i></a></li>
+        {{/global.nav.blog.show_or_hide}}
+
+        {{#global.nav.contact.show_or_hide}}
+            <li><a class="showSection" id="5" href="#">{{global.nav.contact.text}}<i class="fas fa-envelope"></i></a></li>
+        {{/global.nav.contact.show_or_hide}}
     </ul>
 </div>

@@ -19,7 +19,7 @@
                                         <p class="desc">{{global.info.bio}}</p>
                                     </div>
                                     <div class="info animated fadeInUp">
-                                        <h4 class="light">{{page.profile.content.info.title}}</h4>
+                                        <h4 class="light">Personal Info</h4>
                                         <p class="line2"></p>
                                         <ul class="details">
                                             {{#page.details.name.show_or_hide}}
@@ -62,30 +62,6 @@
                                     </div>
                                 </div>
 
-                                <div id="section2" class="targetDiv show work">
-                                    <div class="head animated fadeInDown">
-                                        <h3 class="section-title">{{page.work.title}}</h3>
-                                    </div>
-                                    <ul class="work-menu">
-                                        {{#page.work.menu}}
-                                            <li><a href="#" id="{{id}}" class="work-nav {{class}}">{{text}}</a></li>
-                                        {{/page.work.menu}}
-                                    </ul>
-
-                                    <div id="lightgallery">
-                                        {{#page.work.pics}}
-                                            <a href="{{img}}">
-                                                <img class="thumb animated flipInX {{class}}" src="{{{img}}}">
-                                            </a>
-                                        {{/page.work.pics}}
-                                        {{#page.work.pics2}}
-                                            <a href="{{img}}">
-                                                <img class="thumb animated flipInX {{class}}" src="{{{img}}}">
-                                            </a>
-                                        {{/page.work.pics2}}                                          
-                                    </div>
-                                </div> 
-
                                 <div id="section3" class="targetDiv resume">
                                     <div class="head animated fadeInDown">
                                         <h3 class="section-title">{{page.resume.title}}</h3>
@@ -103,7 +79,7 @@
                                     </ul>
                                     <h4 class="light">{{page.resume.skills.title}}</h4>
                                     <p class="line2"></p>
-                                    <div class="graph">
+                                    <div class="graph" id="skills">
                                         {{#page.resume.skills.graph}}
                                             <span>{{text}}</span>
                                             <div class="{{class}}"><span>{{percent}}</span></div>
@@ -112,13 +88,13 @@
                                     <h4 class="light">{{page.resume.services.title}}</h4>
                                     <p class="line2"></p>
                                     <ul class="service-list">
-                                        {{#page.resume.services.list}}
+                                        {{#references}}
                                             <li class="align-center">
-                                                <i class="{{icon}}"></i>
+                                                <img src="{{{image}}}=s140" style="width:70px" />
                                                 <span class="line-list"></span>
-                                                <p>{{text}}</p>
+                                                <p>{{from}}</p>
                                             </li>
-                                        {{/page.resume.services.list}}
+                                        {{/references}}
                                     </ul>
                                     <h4 class="light top-border">{{page.resume.work.title}}</h4>
                                     <p class="line2"></p>
@@ -135,7 +111,7 @@
 
                                 <div id="section4" class="targetDiv blog">
                                     <div class="head animated fadeInDown">
-                                        <h3 class="section-title">{{page.blog.title}}</h3>
+                                        <h3 class="section-title">Blog</h3>
                                     </div>
                                     {{#posts}}
                                         <div class="row post animated flipInX">
@@ -162,18 +138,10 @@
                                     </div>
                                     <div class="animated fadeIn">
                                         <div class="map">
-                                            <img src="{{{page.contact.info.img}}}">
+                                            <img src="{{{page.contact.info.img_header}}}"/>
                                         </div>
                                         <h4>{{page.contact.info.title}}</h4>
                                         <p class="post-desc">{{page.contact.info.desc}}</p>
-                                        <ul class="contact-meta post-meta">
-                                            {{#page.contact.info.meta}}
-                                                <li>
-                                                    <i class="{{icon}}"></i>
-                                                    <span>{{text}}<span>
-                                                </li>
-                                            {{/page.contact.info.meta}}
-                                        </ul>
                                         <div class="message-box">
                                             <h4>{{page.contact.message.title}}</h4>
                                             <form>
@@ -202,11 +170,37 @@
         </main>
         
     </body>
-    
+
+    <script type="text/javascript">
+        window.__PRELOADED__={{{preloaded}}}
+    </script>
+
     <!-- Vertex library for enabling site updates from https://www.vertex360.co -->
     <script type="text/javascript" src="https://cdn.turbo360-dev.com/dist/vertex.min.js"></script>
 
     {{>scripts}}
     <script src="/js/custom.js"></script>
+
+    <script type="text/javascript">
+        (function(){
+            
+            var data = window.__PRELOADED__;
+            var pageData = data.page;
+            var skills = pageData.resume.skills.list;
+            console.log(skills)
+            var skillsArr = skills.split(",");
+            var skillHTML = "";
+            skillsArr.forEach(function(skill, i) {
+                var skillParts = skill.split(":");
+                var name = skillParts[0];
+                var score = skillParts[1];
+                var classname = "bar bar" + (i+1);
+                skillHTML += "<span>" + name + "</span>";
+                skillHTML += '<div class="' + classname + '"><span>' + score + '% </span></div>';
+            })
+            $("#skills").html(skillHTML);
+        })()
+    </script>
+
   </body>
 </html>
