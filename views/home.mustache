@@ -140,17 +140,17 @@
                                     {{#posts}}
                                         <div class="row post animated flipInX">
                                             <div class="col-md-5 col-sm-12">
-                                                <img src="{{{image}}}=s512">
+                                                <a href="/post/{{slug}}"><img src="{{{image}}}=s512"></a>
                                             </div>
                                             <div class="col-md-7 col-sm-12">
-                                                <h4><a href="{{href}}">{{title}}</a></h4>
+                                                <h4><a href="/post/{{slug}}">{{title}}</a></h4>
                                                 <ul class="post-meta">
                                                     <li>
                                                         <i class="far fa-calendar-alt"></i>
-                                                        <a href="#">{{dateString}}</a>
+                                                        <span>{{dateString}}</span>
                                                     </li>
                                                 </ul>
-                                                <p class="post-desc">{{preview}}</p>
+                                                <p class="post-desc"><a href="/post/{{slug}}">{{preview}}</a></p>
                                             </div>
                                         </div>
                                     {{/posts}}
@@ -202,13 +202,11 @@
         </main>
         
     </body>
+    
     <!-- Vertex library for enabling site updates from https://www.vertex360.co -->
     <script type="text/javascript" src="https://cdn.turbo360-dev.com/dist/vertex.min.js"></script>
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/lightgallery.js"></script>
-    <script src="js/lg-thumbnail.js"></script>
-    <script src="js/lg-fullscreen.js"></script>
-    <script src="js/custom.js"></script>
+
+    {{>scripts}}
+    <script src="/js/custom.js"></script>
   </body>
 </html>

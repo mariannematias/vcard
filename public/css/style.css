@@ -381,7 +381,7 @@ ul {
 .blog-post img {
     height: 370px;
 }
-.post-desc {
+.post-desc a{
     color: #828282;
     font-size: .95rem;
     line-height: 1.2rem;

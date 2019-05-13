@@ -52,7 +52,29 @@ router.get('/blog', (req, res) => {
 
 router.get('/post/:slug', (req, res) => {
 	const data = {cdn: CDN}
-	res.render('blog', data)
+
+	let ctr = new controllers.post()
+	ctr.get({slug:req.params.slug})
+	.then(posts => {
+		if (posts.length == 0){
+			throw new Error('Post '+req.params.slug+' not found')
+			return
+		}
+
+		data['post'] = posts[0]
+		return turbo.currentApp(process.env.TURBO_ENV)
+	})
+	.then(site => {
+		data['site'] = site
+		data['global'] = site.globalConfig
+		res.render('post', data)
+	})
+	.catch(err => {
+		res.json({
+			confirmation: 'fail',
+			message: err.message
+		})
+	})
 })
 
 module.exports = router
