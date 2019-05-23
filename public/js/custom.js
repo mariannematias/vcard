@@ -6,7 +6,7 @@ $(document).ready(function(){
     var section = pageURL.split('/');
     if (section[section.length-1] == '' || section[section.length-1] == '#') {
         $("#section1").show();  
-        $("#section2, #section3, #section4, #section5").hide();
+        $("#section2, #section3, #section4").hide();
     } else {
         $(".targetDiv").hide();
         $('.show').removeClass('show');

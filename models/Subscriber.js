@@ -14,6 +14,8 @@ const props = {
   firstName: {type:String, default:''},
   lastName: {type:String, default:''},
 	email: {type:String, default:'', display:true},
+	subject: {type:String, default:''},
+	message: {type:String, default:''},
   dateString: {type:String, default:''},
   schema: {type:String, default:'subscriber', immutable:true},
 	timestamp: {type:Date, default: new Date(), immutable:true},

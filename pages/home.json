@@ -1,5 +1,5 @@
 { 
-  "details": {
+  "section1": {
     "name": {
       "label": "name",
       "text": "Franklin K. Walsh",
@@ -31,7 +31,7 @@
       "show_or_hide": true
     }
   },
-  "resume": {
+  "section2": {
     "title": "Resume",
     "educ": {
       "title": "Education"
@@ -47,7 +47,7 @@
       "title": "Work Experience"
     }
   },
-  "contact": {
+  "section4": {
     "title": "Contact Us",
     "info": {
       "img_header": "https://lh3.googleusercontent.com/4MOXK-SoVmbKrzLpTNn-FlckgR3gybgn0hWo6eTUiH7CK94ELCBNY0wXnjb4m8zVvI_CKBrZrEFhJXlkX1R22O9K",
