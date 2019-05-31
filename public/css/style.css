@@ -32,7 +32,7 @@ ul {
 }
 .main {
     background-color: #d9dbdd;
-    padding: 5rem 0;
+    padding: 5rem 0 2rem;
 }
 
 /** Left **/
@@ -491,6 +491,10 @@ footer {
 }
 .icons li a {
     color: #2c383c;
+}
+.vertex img {
+    width: 160px;
+    padding: 3rem 0 0;
 }
 
 @media (max-width: 768px) {

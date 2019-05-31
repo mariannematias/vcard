@@ -5,170 +5,169 @@
 
     <body>
     <div id="vertex-container">
-        <main id="vertex-container">
-            <section class="main">
-                <div class="container">
-                    <div class="row">
-                        {{>sidebar}}
-                        <div class="col-md-9 col-sm-12 right">
-                            <div class="body">
-                                <div id="section1" class="targetDiv profile-section">
-                                    <div class="animated fadeInDown">
-                                        <h2 class="light"><strong>{{global.info.name}}</strong><br>{{global.info.position}}</h2>
-                                        <p class="line"></p>
-                                        <p class="desc">{{global.info.bio}}</p>
-                                    </div>
-                                    <div class="info animated fadeInUp">
-                                        <h4 class="light">Personal Info</h4>
-                                        <p class="line2"></p>
-                                        <ul class="details">
-                                            {{#page.section1.name.show_or_hide}}
-                                                <li>
-                                                    <span>{{page.section1.name.label}}</span>
-                                                    <p>{{page.section1.name.text}}</p>
-                                                </li>
-                                            {{/page.section1.name.show_or_hide}}
-                                            {{#page.section1.dob.show_or_hide}}
-                                                <li>
-                                                    <span>{{page.section1.dob.label}}</span>
-                                                    <p>{{page.section1.dob.text}}</p>
-                                                </li>
-                                            {{/page.section1.dob.show_or_hide}}
-                                            {{#page.section1.address.show_or_hide}}
-                                                <li>
-                                                    <span>{{page.section1.address.label}}</span>
-                                                    <p>{{page.section1.address.text}}</p>
-                                                </li>
-                                            {{/page.section1.address.show_or_hide}}
-                                            {{#page.section1.email.show_or_hide}}
-                                                <li>
-                                                    <span>{{page.section1.email.label}}</span>
-                                                    <p>{{page.section1.email.text}}</p>
-                                                </li>
-                                            {{/page.section1.email.show_or_hide}}
-                                            {{#page.section1.phone.show_or_hide}}
-                                                <li>
-                                                    <span>{{page.section1.phone.label}}</span>
-                                                    <p>{{page.section1.phone.text}}</p>
-                                                </li>
-                                            {{/page.section1.phone.show_or_hide}}
-                                            {{#page.section1.website.show_or_hide}}
-                                                <li>
-                                                    <span>{{page.section1.website.label}}</span>
-                                                    <p>{{page.section1.website.text}}</p>
-                                                </li>
-                                            {{/page.section1.website.show_or_hide}}
-                                        </ul>
-                                    </div>
+        <section class="main">
+            <div class="container">
+                <div class="row">
+                    {{>sidebar}}
+                    <div class="col-md-9 col-sm-12 right">
+                        <div class="body">
+                            <div id="section1" class="targetDiv profile-section">
+                                <div class="animated fadeInDown">
+                                    <h2 class="light"><strong>{{global.info.name}}</strong><br>{{global.info.position}}</h2>
+                                    <p class="line"></p>
+                                    <p class="desc">{{global.info.bio}}</p>
                                 </div>
-
-                                <div id="section2" class="targetDiv resume">
-                                    <div class="head animated fadeInDown">
-                                        <h3 class="section-title">{{page.section2.title}}</h3>
-                                    </div>
-                                    <h4 class="light">{{page.section2.educ.title}}</h4>
+                                <div class="info animated fadeInUp">
+                                    <h4 class="light">Personal Info</h4>
                                     <p class="line2"></p>
-                                    <ul class="schools animated fadeInLeft">
-                                        {{#schools}}
+                                    <ul class="details">
+                                        {{#page.section1.name.show_or_hide}}
                                             <li>
-                                                <p class="school">{{name}}</p>
-                                                <p class="year"><i class="far fa-calendar-alt"></i>{{dateRange}}</p>
-                                                <p class="descr">{{description}}</p>
+                                                <span>{{page.section1.name.label}}</span>
+                                                <p>{{page.section1.name.text}}</p>
                                             </li>
-                                        {{/schools}}
-                                    </ul>
-                                    <h4 class="light">{{page.section2.skills.title}}</h4>
-                                    <p class="line2"></p>
-                                    <div class="graph" id="skills">
-                                        {{#page.section2.skills.graph}}
-                                            <span>{{text}}</span>
-                                            <div class="{{class}}"><span>{{percent}}</span></div>
-                                        {{/page.section2.skills.graph}}
-                                    </div>
-                                    <h4 class="light">{{page.section2.services.title}}</h4>
-                                    <p class="line2"></p>
-                                    <ul class="service-list">
-                                        {{#references}}
-                                            <li class="align-center">
-                                                <img src="{{{image}}}=s140" style="width:70px" />
-                                                <span class="line-list"></span>
-                                                <p>{{from}}</p>
-                                            </li>
-                                        {{/references}}
-                                    </ul>
-                                    <h4 class="light top-border">{{page.section2.work.title}}</h4>
-                                    <p class="line2"></p>
-                                    <ul class="schools animated fadeInLeft">
-                                        {{#jobs}}
+                                        {{/page.section1.name.show_or_hide}}
+                                        {{#page.section1.dob.show_or_hide}}
                                             <li>
-                                                <p class="school">{{company}}</p>
-                                                <p class="year"><i class="far fa-calendar-alt"></i>{{start}} - {{end}}</p>
-                                                <p class="descr">{{description}}</p>
+                                                <span>{{page.section1.dob.label}}</span>
+                                                <p>{{page.section1.dob.text}}</p>
                                             </li>
-                                        {{/jobs}}
+                                        {{/page.section1.dob.show_or_hide}}
+                                        {{#page.section1.address.show_or_hide}}
+                                            <li>
+                                                <span>{{page.section1.address.label}}</span>
+                                                <p>{{page.section1.address.text}}</p>
+                                            </li>
+                                        {{/page.section1.address.show_or_hide}}
+                                        {{#page.section1.email.show_or_hide}}
+                                            <li>
+                                                <span>{{page.section1.email.label}}</span>
+                                                <p>{{page.section1.email.text}}</p>
+                                            </li>
+                                        {{/page.section1.email.show_or_hide}}
+                                        {{#page.section1.phone.show_or_hide}}
+                                            <li>
+                                                <span>{{page.section1.phone.label}}</span>
+                                                <p>{{page.section1.phone.text}}</p>
+                                            </li>
+                                        {{/page.section1.phone.show_or_hide}}
+                                        {{#page.section1.website.show_or_hide}}
+                                            <li>
+                                                <span>{{page.section1.website.label}}</span>
+                                                <p>{{page.section1.website.text}}</p>
+                                            </li>
+                                        {{/page.section1.website.show_or_hide}}
                                     </ul>
-                                </div>
-
-                                <div id="section3" class="targetDiv blog">
-                                    <div class="head animated fadeInDown">
-                                        <h3 class="section-title">Blog</h3>
-                                    </div>
-                                    {{#posts}}
-                                        <div class="row post animated flipInX">
-                                            <div class="col-md-5 col-sm-12">
-                                                <a href="/post/{{slug}}"><img src="{{{image}}}=s512"></a>
-                                            </div>
-                                            <div class="col-md-7 col-sm-12">
-                                                <h4><a href="/post/{{slug}}">{{title}}</a></h4>
-                                                <ul class="post-meta">
-                                                    <li>
-                                                        <i class="far fa-calendar-alt"></i>
-                                                        <span>{{dateString}}</span>
-                                                    </li>
-                                                </ul>
-                                                <p class="post-desc"><a href="/post/{{slug}}">{{preview}}</a></p>
-                                            </div>
-                                        </div>
-                                    {{/posts}}
-                                </div>
-
-                                <div id="section4" class="targetDiv contact">
-                                    <div class="head animated fadeInDown">
-                                        <h3 class="section-title">{{page.section4.title}}</h3>
-                                    </div>
-                                    <div class="animated fadeIn">
-                                        <div class="map">
-                                            <img src="{{{page.section4.info.img_header}}}"/>
-                                        </div>
-                                        <h4>{{page.section4.info.title}}</h4>
-                                        <p class="post-desc">{{page.section4.info.desc}}</p>
-                                        <div class="message-box">
-                                            <h4>{{page.section4.message.title}}</h4>
-                                            <form>
-                                                <div class="row">
-                                                    <div class="col-md-4 col-sm-12">
-                                                        <input type="text" id="edd-user-firstName" name="name" id="name" placeholder="First Name">
-                                                        <input type="text" id="edd-user-lastName" name="name" id="name" placeholder="Last Name">
-                                                        <input type="text" id="edd-user-email" name="email" id="email" placeholder="Email">
-                                                        <input type="text" id="edd-user-subj" name="subj" id="subj" placeholder="Subject">
-                                                    </div>
-                                                    <div class="col-md-8 col-sm-12">
-                                                        <textarea name="message" id="edd-user-message" rows="8" placeholder="Message"></textarea>
-                                                    </div>
-                                                </div>
-                                                <p class="align-right"><button id="btn-register" class="btn btn-send">{{page.section4.message.btntext}}</button></p>
-                                            </form>
-                                        </div>
-                                    </div>
                                 </div>
                             </div>
 
-                            {{>footer}}
+                            <div id="section2" class="targetDiv resume">
+                                <div class="head animated fadeInDown">
+                                    <h3 class="section-title">{{page.section2.title}}</h3>
+                                </div>
+                                <h4 class="light">{{page.section2.educ.title}}</h4>
+                                <p class="line2"></p>
+                                <ul class="schools animated fadeInLeft">
+                                    {{#schools}}
+                                        <li>
+                                            <p class="school">{{name}}</p>
+                                            <p class="year"><i class="far fa-calendar-alt"></i>{{dateRange}}</p>
+                                            <p class="descr">{{description}}</p>
+                                        </li>
+                                    {{/schools}}
+                                </ul>
+                                <h4 class="light">{{page.section2.skills.title}}</h4>
+                                <p class="line2"></p>
+                                <div class="graph" id="skills">
+                                    {{#page.section2.skills.graph}}
+                                        <span>{{text}}</span>
+                                        <div class="{{class}}"><span>{{percent}}</span></div>
+                                    {{/page.section2.skills.graph}}
+                                </div>
+                                <h4 class="light">{{page.section2.services.title}}</h4>
+                                <p class="line2"></p>
+                                <ul class="service-list">
+                                    {{#references}}
+                                        <li class="align-center">
+                                            <img src="{{{image}}}=s140" style="width:70px" />
+                                            <span class="line-list"></span>
+                                            <p>{{from}}</p>
+                                        </li>
+                                    {{/references}}
+                                </ul>
+                                <h4 class="light top-border">{{page.section2.work.title}}</h4>
+                                <p class="line2"></p>
+                                <ul class="schools animated fadeInLeft">
+                                    {{#jobs}}
+                                        <li>
+                                            <p class="school">{{company}}</p>
+                                            <p class="year"><i class="far fa-calendar-alt"></i>{{start}} - {{end}}</p>
+                                            <p class="descr">{{description}}</p>
+                                        </li>
+                                    {{/jobs}}
+                                </ul>
+                            </div>
+
+                            <div id="section3" class="targetDiv blog">
+                                <div class="head animated fadeInDown">
+                                    <h3 class="section-title">Blog</h3>
+                                </div>
+                                {{#posts}}
+                                    <div class="row post animated flipInX">
+                                        <div class="col-md-5 col-sm-12">
+                                            <a href="/post/{{slug}}"><img src="{{{image}}}=s512"></a>
+                                        </div>
+                                        <div class="col-md-7 col-sm-12">
+                                            <h4><a href="/post/{{slug}}">{{title}}</a></h4>
+                                            <ul class="post-meta">
+                                                <li>
+                                                    <i class="far fa-calendar-alt"></i>
+                                                    <span>{{dateString}}</span>
+                                                </li>
+                                            </ul>
+                                            <p class="post-desc"><a href="/post/{{slug}}">{{preview}}</a></p>
+                                        </div>
+                                    </div>
+                                {{/posts}}
+                            </div>
+
+                            <div id="section4" class="targetDiv contact">
+                                <div class="head animated fadeInDown">
+                                    <h3 class="section-title">{{page.section4.title}}</h3>
+                                </div>
+                                <div class="animated fadeIn">
+                                    <div class="map">
+                                        <img src="{{{page.section4.info.img_header}}}"/>
+                                    </div>
+                                    <h4>{{page.section4.info.title}}</h4>
+                                    <p class="post-desc">{{page.section4.info.desc}}</p>
+                                    <div class="message-box">
+                                        <h4>{{page.section4.message.title}}</h4>
+                                        <form>
+                                            <div class="row">
+                                                <div class="col-md-4 col-sm-12">
+                                                    <input type="text" id="edd-user-firstName" name="name" id="name" placeholder="First Name">
+                                                    <input type="text" id="edd-user-lastName" name="name" id="name" placeholder="Last Name">
+                                                    <input type="text" id="edd-user-email" name="email" id="email" placeholder="Email">
+                                                    <input type="text" id="edd-user-subj" name="subj" id="subj" placeholder="Subject">
+                                                </div>
+                                                <div class="col-md-8 col-sm-12">
+                                                    <textarea name="message" id="edd-user-message" rows="8" placeholder="Message"></textarea>
+                                                </div>
+                                            </div>
+                                            <p class="align-right"><button id="btn-register" class="btn btn-send">{{page.section4.message.btntext}}</button></p>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
+
+                        {{>footer}}
                     </div>
                 </div>
-            </section>
-        </main>
+                <p class="vertex align-center"><a href="https://www.vertex360.co/" target="_blank"><img src="https://lh3.googleusercontent.com/v91-sRY9vZb7KiL7x7wRmZ8xCzZsQkOZRtoPOw4MnrJYiqwhOXa98bWGl5NJ1xoIPuHkNQgoa_s2nkUSLluOT2e_Hg"/></a></p>
+            </div>
+        </section>
     </div>
     </body>
 
